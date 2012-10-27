@@ -1,7 +1,7 @@
 //
 //  OTSGeometryComponentFilter.h
 //
-// Copyright (C) 2010 ObjGeo.org
+// Copyright (C) 2010 purbo.org
 //
 // This is free software; you can redistribute and/or modify it under
 // the terms of the GNU Lesser General Public Licence as published

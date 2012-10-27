@@ -3,7 +3,7 @@
 //  OTS
 //
 //  Created by Purbo Mohamad on 3/11/10.
-//  Copyright 2010 objgeo.org. All rights reserved.
+//  Copyright 2010 purbo.org. All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>

@@ -1296,9 +1296,9 @@
 			buildConfigurationList = A995F380163BE7F60053E5D2 /* Build configuration list for PBXNativeTarget "OTS" */;
 			buildPhases = (
 				A995F357163BE7F50053E5D2 /* Sources */,
+				A995F4F4163BF40F0053E5D2 /* Headers */,
 				A995F358163BE7F50053E5D2 /* Frameworks */,
 				A995F359163BE7F50053E5D2 /* CopyFiles */,
-				A995F4F4163BF40F0053E5D2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1334,8 +1334,9 @@
 		A995F352163BE7F50053E5D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = OTS;
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = Purbo;
+				ORGANIZATIONNAME = purbo.org;
 			};
 			buildConfigurationList = A995F355163BE7F50053E5D2 /* Build configuration list for PBXProject "OTS" */;
 			compatibilityVersion = "Xcode 3.2";
