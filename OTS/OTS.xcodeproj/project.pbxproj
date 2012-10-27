@@ -1,0 +1,1665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A995F35F163BE7F50053E5D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A995F35E163BE7F50053E5D2 /* Foundation.framework */; };
+		A995F36E163BE7F50053E5D2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A995F36D163BE7F50053E5D2 /* SenTestingKit.framework */; };
+		A995F370163BE7F50053E5D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A995F36F163BE7F50053E5D2 /* UIKit.framework */; };
+		A995F371163BE7F50053E5D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A995F35E163BE7F50053E5D2 /* Foundation.framework */; };
+		A995F374163BE7F50053E5D2 /* libOTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A995F35B163BE7F50053E5D2 /* libOTS.a */; };
+		A995F37A163BE7F50053E5D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A995F378163BE7F50053E5D2 /* InfoPlist.strings */; };
+		A995F486163BEA9B0053E5D2 /* OTSSimplePointInAreaLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F389163BEA9B0053E5D2 /* OTSSimplePointInAreaLocator.m */; };
+		A995F487163BEA9B0053E5D2 /* OTSBoundaryNodeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F38A163BEA9B0053E5D2 /* OTSBoundaryNodeRule.m */; };
+		A995F488163BEA9B0053E5D2 /* OTSCentralEndpointIntersector.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F38B163BEA9B0053E5D2 /* OTSCentralEndpointIntersector.m */; };
+		A995F489163BEA9B0053E5D2 /* OTSCGAlgorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F38C163BEA9B0053E5D2 /* OTSCGAlgorithms.m */; };
+		A995F48A163BEA9B0053E5D2 /* OTSHCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F38D163BEA9B0053E5D2 /* OTSHCoordinate.m */; };
+		A995F48B163BEA9B0053E5D2 /* OTSLineIntersector.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F38E163BEA9B0053E5D2 /* OTSLineIntersector.m */; };
+		A995F48C163BEA9B0053E5D2 /* OTSNotRepresentableException.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F38F163BEA9B0053E5D2 /* OTSNotRepresentableException.m */; };
+		A995F48D163BEA9B0053E5D2 /* OTSPointLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F390163BEA9B0053E5D2 /* OTSPointLocator.m */; };
+		A995F48E163BEA9B0053E5D2 /* OTSPointOnGeometryLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F391163BEA9B0053E5D2 /* OTSPointOnGeometryLocator.m */; };
+		A995F48F163BEA9B0053E5D2 /* OTSRayCrossingCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F392163BEA9B0053E5D2 /* OTSRayCrossingCounter.m */; };
+		A995F490163BEA9B0053E5D2 /* OTSRobustDeterminant.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F393163BEA9B0053E5D2 /* OTSRobustDeterminant.m */; };
+		A995F491163BEA9B0053E5D2 /* OTSCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F395163BEA9B0053E5D2 /* OTSCoordinate.m */; };
+		A995F492163BEA9B0053E5D2 /* OTSCoordinateFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F396163BEA9B0053E5D2 /* OTSCoordinateFilter.m */; };
+		A995F493163BEA9B0053E5D2 /* OTSCoordinateSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F397163BEA9B0053E5D2 /* OTSCoordinateSequence.m */; };
+		A995F494163BEA9B0053E5D2 /* OTSCoordinateSequenceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F398163BEA9B0053E5D2 /* OTSCoordinateSequenceFactory.m */; };
+		A995F495163BEA9B0053E5D2 /* OTSDefaultGeometryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F399163BEA9B0053E5D2 /* OTSDefaultGeometryFactory.m */; };
+		A995F496163BEA9B0053E5D2 /* OTSDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F39A163BEA9B0053E5D2 /* OTSDimension.m */; };
+		A995F497163BEA9B0053E5D2 /* OTSEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F39B163BEA9B0053E5D2 /* OTSEnvelope.m */; };
+		A995F498163BEA9B0053E5D2 /* OTSGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F39C163BEA9B0053E5D2 /* OTSGeometry.m */; };
+		A995F499163BEA9B0053E5D2 /* OTSGeometryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F39D163BEA9B0053E5D2 /* OTSGeometryCollection.m */; };
+		A995F49A163BEA9B0053E5D2 /* OTSGeometryComponentFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F39E163BEA9B0053E5D2 /* OTSGeometryComponentFilter.m */; };
+		A995F49B163BEA9B0053E5D2 /* OTSGeometryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F39F163BEA9B0053E5D2 /* OTSGeometryFactory.m */; };
+		A995F49C163BEA9B0053E5D2 /* OTSGeometryList.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A0163BEA9B0053E5D2 /* OTSGeometryList.m */; };
+		A995F49D163BEA9B0053E5D2 /* OTSIntersectionMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A1163BEA9B0053E5D2 /* OTSIntersectionMatrix.m */; };
+		A995F49E163BEA9B0053E5D2 /* OTSLinearRing.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A2163BEA9B0053E5D2 /* OTSLinearRing.m */; };
+		A995F49F163BEA9B0053E5D2 /* OTSLineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A3163BEA9B0053E5D2 /* OTSLineSegment.m */; };
+		A995F4A0163BEA9B0053E5D2 /* OTSLineString.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A4163BEA9B0053E5D2 /* OTSLineString.m */; };
+		A995F4A1163BEA9B0053E5D2 /* OTSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A5163BEA9B0053E5D2 /* OTSLocation.m */; };
+		A995F4A2163BEA9B0053E5D2 /* OTSMultiLineString.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A6163BEA9B0053E5D2 /* OTSMultiLineString.m */; };
+		A995F4A3163BEA9B0053E5D2 /* OTSMultiPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A7163BEA9B0053E5D2 /* OTSMultiPoint.m */; };
+		A995F4A4163BEA9B0053E5D2 /* OTSMultiPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A8163BEA9B0053E5D2 /* OTSMultiPolygon.m */; };
+		A995F4A5163BEA9B0053E5D2 /* OTSPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3A9163BEA9B0053E5D2 /* OTSPoint.m */; };
+		A995F4A6163BEA9B0053E5D2 /* OTSPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3AA163BEA9B0053E5D2 /* OTSPolygon.m */; };
+		A995F4A7163BEA9B0053E5D2 /* OTSPrecisionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3AB163BEA9B0053E5D2 /* OTSPrecisionModel.m */; };
+		A995F4A8163BEA9B0053E5D2 /* OTSGeometryTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3AD163BEA9B0053E5D2 /* OTSGeometryTransformer.m */; };
+		A995F4A9163BEA9B0053E5D2 /* OTSLinearComponentExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3AE163BEA9B0053E5D2 /* OTSLinearComponentExtractor.m */; };
+		A995F4AA163BEA9B0053E5D2 /* OTSPointExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3AF163BEA9B0053E5D2 /* OTSPointExtractor.m */; };
+		A995F4AB163BEA9B0053E5D2 /* OTSPolygonExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3B0163BEA9B0053E5D2 /* OTSPolygonExtractor.m */; };
+		A995F4AC163BEA9B0053E5D2 /* OTSShortCircuitedGeometryVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3B1163BEA9B0053E5D2 /* OTSShortCircuitedGeometryVisitor.m */; };
+		A995F4AD163BEA9B0053E5D2 /* OTSEdgeSetIntersector.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3B4163BEA9B0053E5D2 /* OTSEdgeSetIntersector.m */; };
+		A995F4AE163BEA9B0053E5D2 /* OTSMonotoneChain.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3B5163BEA9B0053E5D2 /* OTSMonotoneChain.m */; };
+		A995F4AF163BEA9B0053E5D2 /* OTSMonotoneChainEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3B6163BEA9B0053E5D2 /* OTSMonotoneChainEdge.m */; };
+		A995F4B0163BEA9B0053E5D2 /* OTSMonotoneChainIndexer.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3B7163BEA9B0053E5D2 /* OTSMonotoneChainIndexer.m */; };
+		A995F4B1163BEA9B0053E5D2 /* OTSSegmentIntersector.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3B8163BEA9B0053E5D2 /* OTSSegmentIntersector.m */; };
+		A995F4B2163BEA9B0053E5D2 /* OTSSimpleMCSweepLineIntersector.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3B9163BEA9B0053E5D2 /* OTSSimpleMCSweepLineIntersector.m */; };
+		A995F4B3163BEA9B0053E5D2 /* OTSSweepLineEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3BA163BEA9B0053E5D2 /* OTSSweepLineEvent.m */; };
+		A995F4B4163BEA9B0053E5D2 /* OTSSweepLineEventOBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3BB163BEA9B0053E5D2 /* OTSSweepLineEventOBJ.m */; };
+		A995F4B5163BEA9B0053E5D2 /* OTSDepth.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3BC163BEA9B0053E5D2 /* OTSDepth.m */; };
+		A995F4B6163BEA9B0053E5D2 /* OTSDirectedEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3BD163BEA9B0053E5D2 /* OTSDirectedEdge.m */; };
+		A995F4B7163BEA9B0053E5D2 /* OTSDirectedEdgeStar.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3BE163BEA9B0053E5D2 /* OTSDirectedEdgeStar.m */; };
+		A995F4B8163BEA9B0053E5D2 /* OTSEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3BF163BEA9B0053E5D2 /* OTSEdge.m */; };
+		A995F4B9163BEA9B0053E5D2 /* OTSEdgeEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C0163BEA9B0053E5D2 /* OTSEdgeEnd.m */; };
+		A995F4BA163BEA9B0053E5D2 /* OTSEdgeEndStar.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C1163BEA9B0053E5D2 /* OTSEdgeEndStar.m */; };
+		A995F4BB163BEA9B0053E5D2 /* OTSEdgeIntersection.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C2163BEA9B0053E5D2 /* OTSEdgeIntersection.m */; };
+		A995F4BC163BEA9B0053E5D2 /* OTSEdgeIntersectionList.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C3163BEA9B0053E5D2 /* OTSEdgeIntersectionList.m */; };
+		A995F4BD163BEA9B0053E5D2 /* OTSEdgeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C4163BEA9B0053E5D2 /* OTSEdgeList.m */; };
+		A995F4BE163BEA9B0053E5D2 /* OTSEdgeNodingValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C5163BEA9B0053E5D2 /* OTSEdgeNodingValidator.m */; };
+		A995F4BF163BEA9B0053E5D2 /* OTSEdgeRing.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C6163BEA9B0053E5D2 /* OTSEdgeRing.m */; };
+		A995F4C0163BEA9B0053E5D2 /* OTSGeometryGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C7163BEA9B0053E5D2 /* OTSGeometryGraph.m */; };
+		A995F4C1163BEA9B0053E5D2 /* OTSGraphComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C8163BEA9B0053E5D2 /* OTSGraphComponent.m */; };
+		A995F4C2163BEA9B0053E5D2 /* OTSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3C9163BEA9B0053E5D2 /* OTSLabel.m */; };
+		A995F4C3163BEA9B0053E5D2 /* OTSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3CA163BEA9B0053E5D2 /* OTSNode.m */; };
+		A995F4C4163BEA9B0053E5D2 /* OTSNodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3CB163BEA9B0053E5D2 /* OTSNodeFactory.m */; };
+		A995F4C5163BEA9B0053E5D2 /* OTSNodeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3CC163BEA9B0053E5D2 /* OTSNodeMap.m */; };
+		A995F4C6163BEA9B0053E5D2 /* OTSPlanarGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3CD163BEA9B0053E5D2 /* OTSPlanarGraph.m */; };
+		A995F4C7163BEA9B0053E5D2 /* OTSPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3CE163BEA9B0053E5D2 /* OTSPosition.m */; };
+		A995F4C8163BEA9B0053E5D2 /* OTSQuadrant.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3CF163BEA9B0053E5D2 /* OTSQuadrant.m */; };
+		A995F4C9163BEA9B0053E5D2 /* OTSTopologyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3D0163BEA9B0053E5D2 /* OTSTopologyLocation.m */; };
+		A995F4CA163BEA9B0053E5D2 /* OTSAbstractNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3D3163BEA9B0053E5D2 /* OTSAbstractNode.m */; };
+		A995F4CB163BEA9B0053E5D2 /* OTSAbstractSTRtree.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3D4163BEA9B0053E5D2 /* OTSAbstractSTRtree.m */; };
+		A995F4CC163BEA9B0053E5D2 /* OTSItemBoundable.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3D5163BEA9B0053E5D2 /* OTSItemBoundable.m */; };
+		A995F4CD163BEA9B0053E5D2 /* OTSSTRtree.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3D6163BEA9B0053E5D2 /* OTSSTRtree.m */; };
+		A995F4CE163BEA9B0053E5D2 /* OTSOrientedCoordinateArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3D8163BEA9B0053E5D2 /* OTSOrientedCoordinateArray.m */; };
+		A995F4CF163BEA9B0053E5D2 /* OTSConnectedElementLocationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3DB163BEA9B0053E5D2 /* OTSConnectedElementLocationFilter.m */; };
+		A995F4D0163BEA9B0053E5D2 /* OTSConnectedElementPointFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3DC163BEA9B0053E5D2 /* OTSConnectedElementPointFilter.m */; };
+		A995F4D1163BEA9B0053E5D2 /* OTSDistanceOp.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3DD163BEA9B0053E5D2 /* OTSDistanceOp.m */; };
+		A995F4D2163BEA9B0053E5D2 /* OTSGeometryLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3DE163BEA9B0053E5D2 /* OTSGeometryLocation.m */; };
+		A995F4D3163BEA9B0053E5D2 /* OTSGeometryGraphOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3DF163BEA9B0053E5D2 /* OTSGeometryGraphOperation.m */; };
+		A995F4D4163BEA9B0053E5D2 /* OTSElevationMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3E1163BEA9B0053E5D2 /* OTSElevationMatrix.m */; };
+		A995F4D5163BEA9B0053E5D2 /* OTSElevationMatrixCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3E2163BEA9B0053E5D2 /* OTSElevationMatrixCell.m */; };
+		A995F4D6163BEA9B0053E5D2 /* OTSLineBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3E3163BEA9B0053E5D2 /* OTSLineBuilder.m */; };
+		A995F4D7163BEA9B0053E5D2 /* OTSMaximalEdgeRing.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3E4163BEA9B0053E5D2 /* OTSMaximalEdgeRing.m */; };
+		A995F4D8163BEA9B0053E5D2 /* OTSMinimalEdgeRing.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3E5163BEA9B0053E5D2 /* OTSMinimalEdgeRing.m */; };
+		A995F4D9163BEA9B0053E5D2 /* OTSOverlayNodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3E6163BEA9B0053E5D2 /* OTSOverlayNodeFactory.m */; };
+		A995F4DA163BEA9B0053E5D2 /* OTSOverlayOp.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3E7163BEA9B0053E5D2 /* OTSOverlayOp.m */; };
+		A995F4DB163BEA9B0053E5D2 /* OTSPointBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3E8163BEA9B0053E5D2 /* OTSPointBuilder.m */; };
+		A995F4DC163BEA9B0053E5D2 /* OTSPolygonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3E9163BEA9B0053E5D2 /* OTSPolygonBuilder.m */; };
+		A995F4DD163BEA9B0053E5D2 /* OTSGeometrySnapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3EB163BEA9B0053E5D2 /* OTSGeometrySnapper.m */; };
+		A995F4DE163BEA9B0053E5D2 /* OTSLineStringSnapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3EC163BEA9B0053E5D2 /* OTSLineStringSnapper.m */; };
+		A995F4DF163BEA9B0053E5D2 /* OTSSnapIfNeededOverlayOp.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3ED163BEA9B0053E5D2 /* OTSSnapIfNeededOverlayOp.m */; };
+		A995F4E0163BEA9B0053E5D2 /* OTSSnapOverlayOp.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3EE163BEA9B0053E5D2 /* OTSSnapOverlayOp.m */; };
+		A995F4E1163BEA9B0053E5D2 /* OTSOverlayResultValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3F0163BEA9B0053E5D2 /* OTSOverlayResultValidator.m */; };
+		A995F4E2163BEA9B0053E5D2 /* OTSRectangleContains.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3F2163BEA9B0053E5D2 /* OTSRectangleContains.m */; };
+		A995F4E3163BEA9B0053E5D2 /* OTSRectangleIntersects.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3F3163BEA9B0053E5D2 /* OTSRectangleIntersects.m */; };
+		A995F4E4163BEA9B0053E5D2 /* OTSSegmentIntersectionTester.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3F4163BEA9B0053E5D2 /* OTSSegmentIntersectionTester.m */; };
+		A995F4E5163BEA9B0053E5D2 /* OTSEdgeEndBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3F6163BEA9B0053E5D2 /* OTSEdgeEndBuilder.m */; };
+		A995F4E6163BEA9B0053E5D2 /* OTSEdgeEndBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3F7163BEA9B0053E5D2 /* OTSEdgeEndBundle.m */; };
+		A995F4E7163BEA9B0053E5D2 /* OTSEdgeEndBundleStar.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3F8163BEA9B0053E5D2 /* OTSEdgeEndBundleStar.m */; };
+		A995F4E8163BEA9B0053E5D2 /* OTSRelateComputer.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3F9163BEA9B0053E5D2 /* OTSRelateComputer.m */; };
+		A995F4E9163BEA9B0053E5D2 /* OTSRelateNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3FA163BEA9B0053E5D2 /* OTSRelateNode.m */; };
+		A995F4EA163BEA9B0053E5D2 /* OTSRelateNodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3FB163BEA9B0053E5D2 /* OTSRelateNodeFactory.m */; };
+		A995F4EB163BEA9B0053E5D2 /* OTSRelateNodeGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3FC163BEA9B0053E5D2 /* OTSRelateNodeGraph.m */; };
+		A995F4EC163BEA9B0053E5D2 /* OTSRelateOp.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3FD163BEA9B0053E5D2 /* OTSRelateOp.m */; };
+		A995F4ED163BEA9B0053E5D2 /* OTSCommonBits.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F3FF163BEA9B0053E5D2 /* OTSCommonBits.m */; };
+		A995F4EE163BEA9B0053E5D2 /* OTSCommonBitsRemover.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F400163BEA9B0053E5D2 /* OTSCommonBitsRemover.m */; };
+		A995F4EF163BEA9B0053E5D2 /* OTSSimpleGeometryPrecisionReducer.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F401163BEA9B0053E5D2 /* OTSSimpleGeometryPrecisionReducer.m */; };
+		A995F4F0163BEA9B0053E5D2 /* OTSUniqueCoordinateArrayFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F403163BEA9B0053E5D2 /* OTSUniqueCoordinateArrayFilter.m */; };
+		A995F4F5163BF49E0053E5D2 /* OTSSimplePointInAreaLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F407163BEA9B0053E5D2 /* OTSSimplePointInAreaLocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4F6163BF49E0053E5D2 /* OTSBoundaryNodeRule.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F408163BEA9B0053E5D2 /* OTSBoundaryNodeRule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4F7163BF49E0053E5D2 /* OTSCentralEndpointIntersector.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F409163BEA9B0053E5D2 /* OTSCentralEndpointIntersector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4F8163BF49E0053E5D2 /* OTSCGAlgorithms.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F40A163BEA9B0053E5D2 /* OTSCGAlgorithms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4F9163BF49E0053E5D2 /* OTSHCoordinate.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F40B163BEA9B0053E5D2 /* OTSHCoordinate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4FA163BF49E0053E5D2 /* OTSLineIntersector.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F40C163BEA9B0053E5D2 /* OTSLineIntersector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4FB163BF49E0053E5D2 /* OTSNotRepresentableException.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F40D163BEA9B0053E5D2 /* OTSNotRepresentableException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4FC163BF49E0053E5D2 /* OTSPointLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F40E163BEA9B0053E5D2 /* OTSPointLocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4FD163BF49E0053E5D2 /* OTSPointOnGeometryLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F40F163BEA9B0053E5D2 /* OTSPointOnGeometryLocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4FE163BF49E0053E5D2 /* OTSRayCrossingCounter.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F410163BEA9B0053E5D2 /* OTSRayCrossingCounter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F4FF163BF49E0053E5D2 /* OTSRobustDeterminant.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F411163BEA9B0053E5D2 /* OTSRobustDeterminant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F500163BF49E0053E5D2 /* OTSCoordinate.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F413163BEA9B0053E5D2 /* OTSCoordinate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F501163BF49E0053E5D2 /* OTSCoordinateFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F414163BEA9B0053E5D2 /* OTSCoordinateFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F502163BF49E0053E5D2 /* OTSCoordinateSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F415163BEA9B0053E5D2 /* OTSCoordinateSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F503163BF49E0053E5D2 /* OTSCoordinateSequenceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F416163BEA9B0053E5D2 /* OTSCoordinateSequenceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F504163BF49E0053E5D2 /* OTSDefaultGeometryFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F417163BEA9B0053E5D2 /* OTSDefaultGeometryFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F505163BF49E0053E5D2 /* OTSDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F418163BEA9B0053E5D2 /* OTSDimension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F506163BF49E0053E5D2 /* OTSEnvelope.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F419163BEA9B0053E5D2 /* OTSEnvelope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F507163BF49E0053E5D2 /* OTSGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F41A163BEA9B0053E5D2 /* OTSGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F508163BF49E0053E5D2 /* OTSGeometryCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F41B163BEA9B0053E5D2 /* OTSGeometryCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F509163BF49E0053E5D2 /* OTSGeometryComponentFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F41C163BEA9B0053E5D2 /* OTSGeometryComponentFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F50A163BF49E0053E5D2 /* OTSGeometryFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F41D163BEA9B0053E5D2 /* OTSGeometryFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F50B163BF49E0053E5D2 /* OTSGeometryFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F41E163BEA9B0053E5D2 /* OTSGeometryFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F50C163BF49E0053E5D2 /* OTSGeometryList.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F41F163BEA9B0053E5D2 /* OTSGeometryList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F50D163BF49E0053E5D2 /* OTSIntersectionMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F420163BEA9B0053E5D2 /* OTSIntersectionMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F50E163BF49E0053E5D2 /* OTSLinearRing.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F421163BEA9B0053E5D2 /* OTSLinearRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F50F163BF49E0053E5D2 /* OTSLineSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F422163BEA9B0053E5D2 /* OTSLineSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F510163BF49E0053E5D2 /* OTSLineString.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F423163BEA9B0053E5D2 /* OTSLineString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F511163BF49E0053E5D2 /* OTSLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F424163BEA9B0053E5D2 /* OTSLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F512163BF49E0053E5D2 /* OTSMultiLineString.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F425163BEA9B0053E5D2 /* OTSMultiLineString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F513163BF49E0053E5D2 /* OTSMultiPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F426163BEA9B0053E5D2 /* OTSMultiPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F514163BF49E0053E5D2 /* OTSMultiPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F427163BEA9B0053E5D2 /* OTSMultiPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F515163BF49E0053E5D2 /* OTSPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F428163BEA9B0053E5D2 /* OTSPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F516163BF49E0053E5D2 /* OTSPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F429163BEA9B0053E5D2 /* OTSPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F517163BF49E0053E5D2 /* OTSPrecisionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F42A163BEA9B0053E5D2 /* OTSPrecisionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F518163BF49E0053E5D2 /* OTSGeometryTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F42C163BEA9B0053E5D2 /* OTSGeometryTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F519163BF49E0053E5D2 /* OTSLinearComponentExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F42D163BEA9B0053E5D2 /* OTSLinearComponentExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F51A163BF49E0053E5D2 /* OTSPointExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F42E163BEA9B0053E5D2 /* OTSPointExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F51B163BF49E0053E5D2 /* OTSPolygonExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F42F163BEA9B0053E5D2 /* OTSPolygonExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F51C163BF49E0053E5D2 /* OTSShortCircuitedGeometryVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F430163BEA9B0053E5D2 /* OTSShortCircuitedGeometryVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F51D163BF49E0053E5D2 /* OTSEdgeSetIntersector.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F433163BEA9B0053E5D2 /* OTSEdgeSetIntersector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F51E163BF49E0053E5D2 /* OTSMonotoneChain.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F434163BEA9B0053E5D2 /* OTSMonotoneChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F51F163BF49E0053E5D2 /* OTSMonotoneChainEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F435163BEA9B0053E5D2 /* OTSMonotoneChainEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F520163BF49E0053E5D2 /* OTSMonotoneChainIndexer.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F436163BEA9B0053E5D2 /* OTSMonotoneChainIndexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F521163BF49E0053E5D2 /* OTSSegmentIntersector.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F437163BEA9B0053E5D2 /* OTSSegmentIntersector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F522163BF49E0053E5D2 /* OTSSimpleMCSweepLineIntersector.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F438163BEA9B0053E5D2 /* OTSSimpleMCSweepLineIntersector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F523163BF49E0053E5D2 /* OTSSweepLineEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F439163BEA9B0053E5D2 /* OTSSweepLineEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F524163BF49E0053E5D2 /* OTSSweepLineEventOBJ.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F43A163BEA9B0053E5D2 /* OTSSweepLineEventOBJ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F525163BF49E0053E5D2 /* OTSDepth.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F43B163BEA9B0053E5D2 /* OTSDepth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F526163BF49E0053E5D2 /* OTSDirectedEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F43C163BEA9B0053E5D2 /* OTSDirectedEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F527163BF49E0053E5D2 /* OTSDirectedEdgeStar.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F43D163BEA9B0053E5D2 /* OTSDirectedEdgeStar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F528163BF49E0053E5D2 /* OTSEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F43E163BEA9B0053E5D2 /* OTSEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F529163BF49E0053E5D2 /* OTSEdgeEnd.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F43F163BEA9B0053E5D2 /* OTSEdgeEnd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F52A163BF49E0053E5D2 /* OTSEdgeEndStar.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F440163BEA9B0053E5D2 /* OTSEdgeEndStar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F52B163BF49E0053E5D2 /* OTSEdgeIntersection.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F441163BEA9B0053E5D2 /* OTSEdgeIntersection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F52C163BF49E0053E5D2 /* OTSEdgeIntersectionList.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F442163BEA9B0053E5D2 /* OTSEdgeIntersectionList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F52D163BF49E0053E5D2 /* OTSEdgeList.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F443163BEA9B0053E5D2 /* OTSEdgeList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F52E163BF49E0053E5D2 /* OTSEdgeNodingValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F444163BEA9B0053E5D2 /* OTSEdgeNodingValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F52F163BF49E0053E5D2 /* OTSEdgeRing.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F445163BEA9B0053E5D2 /* OTSEdgeRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F530163BF49E0053E5D2 /* OTSGeometryGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F446163BEA9B0053E5D2 /* OTSGeometryGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F531163BF49E0053E5D2 /* OTSGraphComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F447163BEA9B0053E5D2 /* OTSGraphComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F532163BF49E0053E5D2 /* OTSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F448163BEA9B0053E5D2 /* OTSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F533163BF49E0053E5D2 /* OTSNode.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F449163BEA9B0053E5D2 /* OTSNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F534163BF49E0053E5D2 /* OTSNodeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F44A163BEA9B0053E5D2 /* OTSNodeFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F535163BF49E0053E5D2 /* OTSNodeMap.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F44B163BEA9B0053E5D2 /* OTSNodeMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F536163BF49E0053E5D2 /* OTSPlanarGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F44C163BEA9B0053E5D2 /* OTSPlanarGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F537163BF49E0053E5D2 /* OTSPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F44D163BEA9B0053E5D2 /* OTSPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F538163BF49E0053E5D2 /* OTSQuadrant.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F44E163BEA9B0053E5D2 /* OTSQuadrant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F539163BF49E0053E5D2 /* OTSTopologyLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F44F163BEA9B0053E5D2 /* OTSTopologyLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F53A163BF49E0053E5D2 /* OTSItemVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F451163BEA9B0053E5D2 /* OTSItemVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F53B163BF49E0053E5D2 /* OTSSpatialIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F452163BEA9B0053E5D2 /* OTSSpatialIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F53C163BF49E0053E5D2 /* OTSAbstractNode.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F454163BEA9B0053E5D2 /* OTSAbstractNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F53D163BF49E0053E5D2 /* OTSAbstractSTRtree.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F455163BEA9B0053E5D2 /* OTSAbstractSTRtree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F53E163BF49E0053E5D2 /* OTSBoundable.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F456163BEA9B0053E5D2 /* OTSBoundable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F53F163BF49E0053E5D2 /* OTSItemBoundable.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F457163BEA9B0053E5D2 /* OTSItemBoundable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F540163BF49E0053E5D2 /* OTSSTRtree.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F458163BEA9B0053E5D2 /* OTSSTRtree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F541163BF49E0053E5D2 /* OTSOrientedCoordinateArray.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F45A163BEA9B0053E5D2 /* OTSOrientedCoordinateArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F542163BF49E0053E5D2 /* OTSConnectedElementLocationFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F45D163BEA9B0053E5D2 /* OTSConnectedElementLocationFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F543163BF49E0053E5D2 /* OTSConnectedElementPointFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F45E163BEA9B0053E5D2 /* OTSConnectedElementPointFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F544163BF49E0053E5D2 /* OTSDistanceOp.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F45F163BEA9B0053E5D2 /* OTSDistanceOp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F545163BF49E0053E5D2 /* OTSGeometryLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F460163BEA9B0053E5D2 /* OTSGeometryLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F546163BF49E0053E5D2 /* OTSGeometryGraphOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F461163BEA9B0053E5D2 /* OTSGeometryGraphOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F547163BF49E0053E5D2 /* OTSElevationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F463163BEA9B0053E5D2 /* OTSElevationMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F548163BF49E0053E5D2 /* OTSElevationMatrixCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F464163BEA9B0053E5D2 /* OTSElevationMatrixCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F549163BF49E0053E5D2 /* OTSLineBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F465163BEA9B0053E5D2 /* OTSLineBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F54A163BF49E0053E5D2 /* OTSMaximalEdgeRing.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F466163BEA9B0053E5D2 /* OTSMaximalEdgeRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F54B163BF49E0053E5D2 /* OTSMinimalEdgeRing.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F467163BEA9B0053E5D2 /* OTSMinimalEdgeRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F54C163BF49E0053E5D2 /* OTSOverlayNodeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F468163BEA9B0053E5D2 /* OTSOverlayNodeFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F54D163BF49E0053E5D2 /* OTSOverlayOp.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F469163BEA9B0053E5D2 /* OTSOverlayOp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F54E163BF49E0053E5D2 /* OTSPointBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F46A163BEA9B0053E5D2 /* OTSPointBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F54F163BF49E0053E5D2 /* OTSPolygonBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F46B163BEA9B0053E5D2 /* OTSPolygonBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F550163BF49E0053E5D2 /* OTSGeometrySnapper.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F46D163BEA9B0053E5D2 /* OTSGeometrySnapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F551163BF49E0053E5D2 /* OTSLineStringSnapper.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F46E163BEA9B0053E5D2 /* OTSLineStringSnapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F552163BF49E0053E5D2 /* OTSSnapIfNeededOverlayOp.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F46F163BEA9B0053E5D2 /* OTSSnapIfNeededOverlayOp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F553163BF49E0053E5D2 /* OTSSnapOverlayOp.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F470163BEA9B0053E5D2 /* OTSSnapOverlayOp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F554163BF49E0053E5D2 /* OTSOverlayResultValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F472163BEA9B0053E5D2 /* OTSOverlayResultValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F555163BF49E0053E5D2 /* OTSRectangleContains.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F474163BEA9B0053E5D2 /* OTSRectangleContains.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F556163BF49E0053E5D2 /* OTSRectangleIntersects.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F475163BEA9B0053E5D2 /* OTSRectangleIntersects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F557163BF49E0053E5D2 /* OTSSegmentIntersectionTester.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F476163BEA9B0053E5D2 /* OTSSegmentIntersectionTester.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F558163BF49E0053E5D2 /* OTSEdgeEndBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F478163BEA9B0053E5D2 /* OTSEdgeEndBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F559163BF49E0053E5D2 /* OTSEdgeEndBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F479163BEA9B0053E5D2 /* OTSEdgeEndBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F55A163BF49E0053E5D2 /* OTSEdgeEndBundleStar.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F47A163BEA9B0053E5D2 /* OTSEdgeEndBundleStar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F55B163BF49E0053E5D2 /* OTSRelateComputer.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F47B163BEA9B0053E5D2 /* OTSRelateComputer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F55C163BF49E0053E5D2 /* OTSRelateNode.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F47C163BEA9B0053E5D2 /* OTSRelateNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F55D163BF49E0053E5D2 /* OTSRelateNodeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F47D163BEA9B0053E5D2 /* OTSRelateNodeFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F55E163BF49E0053E5D2 /* OTSRelateNodeGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F47E163BEA9B0053E5D2 /* OTSRelateNodeGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F55F163BF49E0053E5D2 /* OTSRelateOp.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F47F163BEA9B0053E5D2 /* OTSRelateOp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F560163BF49E0053E5D2 /* OTSCommonBits.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F481163BEA9B0053E5D2 /* OTSCommonBits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F561163BF49E0053E5D2 /* OTSCommonBitsRemover.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F482163BEA9B0053E5D2 /* OTSCommonBitsRemover.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F562163BF49E0053E5D2 /* OTSSimpleGeometryPrecisionReducer.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F483163BEA9B0053E5D2 /* OTSSimpleGeometryPrecisionReducer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F563163BF49E0053E5D2 /* OTSUniqueCoordinateArrayFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A995F485163BEA9B0053E5D2 /* OTSUniqueCoordinateArrayFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A995F572163BF8910053E5D2 /* IntersectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F565163BF8910053E5D2 /* IntersectionTest.m */; };
+		A995F573163BF8910053E5D2 /* LineSegmentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F566163BF8910053E5D2 /* LineSegmentTest.m */; };
+		A995F574163BF8910053E5D2 /* RelateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F567163BF8910053E5D2 /* RelateTest.m */; };
+		A995F575163BF8910053E5D2 /* STRtreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F56B163BF8910053E5D2 /* STRtreeTest.m */; };
+		A995F576163BF8910053E5D2 /* DistanceOpTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F56E163BF8910053E5D2 /* DistanceOpTest.m */; };
+		A995F577163BF8910053E5D2 /* SnapOverlayOpTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A995F571163BF8910053E5D2 /* SnapOverlayOpTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A995F372163BE7F50053E5D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A995F352163BE7F50053E5D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A995F35A163BE7F50053E5D2;
+			remoteInfo = OTS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A995F359163BE7F50053E5D2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A995F35B163BE7F50053E5D2 /* libOTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOTS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A995F35E163BE7F50053E5D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A995F362163BE7F50053E5D2 /* OTS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OTS-Prefix.pch"; sourceTree = "<group>"; };
+		A995F36C163BE7F50053E5D2 /* OTSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A995F36D163BE7F50053E5D2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A995F36F163BE7F50053E5D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A995F377163BE7F50053E5D2 /* OTSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OTSTests-Info.plist"; sourceTree = "<group>"; };
+		A995F379163BE7F50053E5D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A995F389163BEA9B0053E5D2 /* OTSSimplePointInAreaLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSimplePointInAreaLocator.m; sourceTree = "<group>"; };
+		A995F38A163BEA9B0053E5D2 /* OTSBoundaryNodeRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSBoundaryNodeRule.m; sourceTree = "<group>"; };
+		A995F38B163BEA9B0053E5D2 /* OTSCentralEndpointIntersector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCentralEndpointIntersector.m; sourceTree = "<group>"; };
+		A995F38C163BEA9B0053E5D2 /* OTSCGAlgorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCGAlgorithms.m; sourceTree = "<group>"; };
+		A995F38D163BEA9B0053E5D2 /* OTSHCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSHCoordinate.m; sourceTree = "<group>"; };
+		A995F38E163BEA9B0053E5D2 /* OTSLineIntersector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLineIntersector.m; sourceTree = "<group>"; };
+		A995F38F163BEA9B0053E5D2 /* OTSNotRepresentableException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNotRepresentableException.m; sourceTree = "<group>"; };
+		A995F390163BEA9B0053E5D2 /* OTSPointLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPointLocator.m; sourceTree = "<group>"; };
+		A995F391163BEA9B0053E5D2 /* OTSPointOnGeometryLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPointOnGeometryLocator.m; sourceTree = "<group>"; };
+		A995F392163BEA9B0053E5D2 /* OTSRayCrossingCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRayCrossingCounter.m; sourceTree = "<group>"; };
+		A995F393163BEA9B0053E5D2 /* OTSRobustDeterminant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRobustDeterminant.m; sourceTree = "<group>"; };
+		A995F395163BEA9B0053E5D2 /* OTSCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCoordinate.m; sourceTree = "<group>"; };
+		A995F396163BEA9B0053E5D2 /* OTSCoordinateFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCoordinateFilter.m; sourceTree = "<group>"; };
+		A995F397163BEA9B0053E5D2 /* OTSCoordinateSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCoordinateSequence.m; sourceTree = "<group>"; };
+		A995F398163BEA9B0053E5D2 /* OTSCoordinateSequenceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCoordinateSequenceFactory.m; sourceTree = "<group>"; };
+		A995F399163BEA9B0053E5D2 /* OTSDefaultGeometryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSDefaultGeometryFactory.m; sourceTree = "<group>"; };
+		A995F39A163BEA9B0053E5D2 /* OTSDimension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSDimension.m; sourceTree = "<group>"; };
+		A995F39B163BEA9B0053E5D2 /* OTSEnvelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEnvelope.m; sourceTree = "<group>"; };
+		A995F39C163BEA9B0053E5D2 /* OTSGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometry.m; sourceTree = "<group>"; };
+		A995F39D163BEA9B0053E5D2 /* OTSGeometryCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometryCollection.m; sourceTree = "<group>"; };
+		A995F39E163BEA9B0053E5D2 /* OTSGeometryComponentFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometryComponentFilter.m; sourceTree = "<group>"; };
+		A995F39F163BEA9B0053E5D2 /* OTSGeometryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometryFactory.m; sourceTree = "<group>"; };
+		A995F3A0163BEA9B0053E5D2 /* OTSGeometryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometryList.m; sourceTree = "<group>"; };
+		A995F3A1163BEA9B0053E5D2 /* OTSIntersectionMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSIntersectionMatrix.m; sourceTree = "<group>"; };
+		A995F3A2163BEA9B0053E5D2 /* OTSLinearRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLinearRing.m; sourceTree = "<group>"; };
+		A995F3A3163BEA9B0053E5D2 /* OTSLineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLineSegment.m; sourceTree = "<group>"; };
+		A995F3A4163BEA9B0053E5D2 /* OTSLineString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLineString.m; sourceTree = "<group>"; };
+		A995F3A5163BEA9B0053E5D2 /* OTSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLocation.m; sourceTree = "<group>"; };
+		A995F3A6163BEA9B0053E5D2 /* OTSMultiLineString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSMultiLineString.m; sourceTree = "<group>"; };
+		A995F3A7163BEA9B0053E5D2 /* OTSMultiPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSMultiPoint.m; sourceTree = "<group>"; };
+		A995F3A8163BEA9B0053E5D2 /* OTSMultiPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSMultiPolygon.m; sourceTree = "<group>"; };
+		A995F3A9163BEA9B0053E5D2 /* OTSPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPoint.m; sourceTree = "<group>"; };
+		A995F3AA163BEA9B0053E5D2 /* OTSPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPolygon.m; sourceTree = "<group>"; };
+		A995F3AB163BEA9B0053E5D2 /* OTSPrecisionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPrecisionModel.m; sourceTree = "<group>"; };
+		A995F3AD163BEA9B0053E5D2 /* OTSGeometryTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometryTransformer.m; sourceTree = "<group>"; };
+		A995F3AE163BEA9B0053E5D2 /* OTSLinearComponentExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLinearComponentExtractor.m; sourceTree = "<group>"; };
+		A995F3AF163BEA9B0053E5D2 /* OTSPointExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPointExtractor.m; sourceTree = "<group>"; };
+		A995F3B0163BEA9B0053E5D2 /* OTSPolygonExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPolygonExtractor.m; sourceTree = "<group>"; };
+		A995F3B1163BEA9B0053E5D2 /* OTSShortCircuitedGeometryVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSShortCircuitedGeometryVisitor.m; sourceTree = "<group>"; };
+		A995F3B4163BEA9B0053E5D2 /* OTSEdgeSetIntersector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeSetIntersector.m; sourceTree = "<group>"; };
+		A995F3B5163BEA9B0053E5D2 /* OTSMonotoneChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSMonotoneChain.m; sourceTree = "<group>"; };
+		A995F3B6163BEA9B0053E5D2 /* OTSMonotoneChainEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSMonotoneChainEdge.m; sourceTree = "<group>"; };
+		A995F3B7163BEA9B0053E5D2 /* OTSMonotoneChainIndexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSMonotoneChainIndexer.m; sourceTree = "<group>"; };
+		A995F3B8163BEA9B0053E5D2 /* OTSSegmentIntersector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSegmentIntersector.m; sourceTree = "<group>"; };
+		A995F3B9163BEA9B0053E5D2 /* OTSSimpleMCSweepLineIntersector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSimpleMCSweepLineIntersector.m; sourceTree = "<group>"; };
+		A995F3BA163BEA9B0053E5D2 /* OTSSweepLineEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSweepLineEvent.m; sourceTree = "<group>"; };
+		A995F3BB163BEA9B0053E5D2 /* OTSSweepLineEventOBJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSweepLineEventOBJ.m; sourceTree = "<group>"; };
+		A995F3BC163BEA9B0053E5D2 /* OTSDepth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSDepth.m; sourceTree = "<group>"; };
+		A995F3BD163BEA9B0053E5D2 /* OTSDirectedEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSDirectedEdge.m; sourceTree = "<group>"; };
+		A995F3BE163BEA9B0053E5D2 /* OTSDirectedEdgeStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSDirectedEdgeStar.m; sourceTree = "<group>"; };
+		A995F3BF163BEA9B0053E5D2 /* OTSEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdge.m; sourceTree = "<group>"; };
+		A995F3C0163BEA9B0053E5D2 /* OTSEdgeEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeEnd.m; sourceTree = "<group>"; };
+		A995F3C1163BEA9B0053E5D2 /* OTSEdgeEndStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeEndStar.m; sourceTree = "<group>"; };
+		A995F3C2163BEA9B0053E5D2 /* OTSEdgeIntersection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeIntersection.m; sourceTree = "<group>"; };
+		A995F3C3163BEA9B0053E5D2 /* OTSEdgeIntersectionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeIntersectionList.m; sourceTree = "<group>"; };
+		A995F3C4163BEA9B0053E5D2 /* OTSEdgeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeList.m; sourceTree = "<group>"; };
+		A995F3C5163BEA9B0053E5D2 /* OTSEdgeNodingValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeNodingValidator.m; sourceTree = "<group>"; };
+		A995F3C6163BEA9B0053E5D2 /* OTSEdgeRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeRing.m; sourceTree = "<group>"; };
+		A995F3C7163BEA9B0053E5D2 /* OTSGeometryGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometryGraph.m; sourceTree = "<group>"; };
+		A995F3C8163BEA9B0053E5D2 /* OTSGraphComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGraphComponent.m; sourceTree = "<group>"; };
+		A995F3C9163BEA9B0053E5D2 /* OTSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLabel.m; sourceTree = "<group>"; };
+		A995F3CA163BEA9B0053E5D2 /* OTSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNode.m; sourceTree = "<group>"; };
+		A995F3CB163BEA9B0053E5D2 /* OTSNodeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNodeFactory.m; sourceTree = "<group>"; };
+		A995F3CC163BEA9B0053E5D2 /* OTSNodeMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNodeMap.m; sourceTree = "<group>"; };
+		A995F3CD163BEA9B0053E5D2 /* OTSPlanarGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPlanarGraph.m; sourceTree = "<group>"; };
+		A995F3CE163BEA9B0053E5D2 /* OTSPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPosition.m; sourceTree = "<group>"; };
+		A995F3CF163BEA9B0053E5D2 /* OTSQuadrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSQuadrant.m; sourceTree = "<group>"; };
+		A995F3D0163BEA9B0053E5D2 /* OTSTopologyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTopologyLocation.m; sourceTree = "<group>"; };
+		A995F3D3163BEA9B0053E5D2 /* OTSAbstractNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSAbstractNode.m; sourceTree = "<group>"; };
+		A995F3D4163BEA9B0053E5D2 /* OTSAbstractSTRtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSAbstractSTRtree.m; sourceTree = "<group>"; };
+		A995F3D5163BEA9B0053E5D2 /* OTSItemBoundable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSItemBoundable.m; sourceTree = "<group>"; };
+		A995F3D6163BEA9B0053E5D2 /* OTSSTRtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSTRtree.m; sourceTree = "<group>"; };
+		A995F3D8163BEA9B0053E5D2 /* OTSOrientedCoordinateArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSOrientedCoordinateArray.m; sourceTree = "<group>"; };
+		A995F3DB163BEA9B0053E5D2 /* OTSConnectedElementLocationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSConnectedElementLocationFilter.m; sourceTree = "<group>"; };
+		A995F3DC163BEA9B0053E5D2 /* OTSConnectedElementPointFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSConnectedElementPointFilter.m; sourceTree = "<group>"; };
+		A995F3DD163BEA9B0053E5D2 /* OTSDistanceOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSDistanceOp.m; sourceTree = "<group>"; };
+		A995F3DE163BEA9B0053E5D2 /* OTSGeometryLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometryLocation.m; sourceTree = "<group>"; };
+		A995F3DF163BEA9B0053E5D2 /* OTSGeometryGraphOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometryGraphOperation.m; sourceTree = "<group>"; };
+		A995F3E1163BEA9B0053E5D2 /* OTSElevationMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSElevationMatrix.m; sourceTree = "<group>"; };
+		A995F3E2163BEA9B0053E5D2 /* OTSElevationMatrixCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSElevationMatrixCell.m; sourceTree = "<group>"; };
+		A995F3E3163BEA9B0053E5D2 /* OTSLineBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLineBuilder.m; sourceTree = "<group>"; };
+		A995F3E4163BEA9B0053E5D2 /* OTSMaximalEdgeRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSMaximalEdgeRing.m; sourceTree = "<group>"; };
+		A995F3E5163BEA9B0053E5D2 /* OTSMinimalEdgeRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSMinimalEdgeRing.m; sourceTree = "<group>"; };
+		A995F3E6163BEA9B0053E5D2 /* OTSOverlayNodeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSOverlayNodeFactory.m; sourceTree = "<group>"; };
+		A995F3E7163BEA9B0053E5D2 /* OTSOverlayOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSOverlayOp.m; sourceTree = "<group>"; };
+		A995F3E8163BEA9B0053E5D2 /* OTSPointBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPointBuilder.m; sourceTree = "<group>"; };
+		A995F3E9163BEA9B0053E5D2 /* OTSPolygonBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPolygonBuilder.m; sourceTree = "<group>"; };
+		A995F3EB163BEA9B0053E5D2 /* OTSGeometrySnapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGeometrySnapper.m; sourceTree = "<group>"; };
+		A995F3EC163BEA9B0053E5D2 /* OTSLineStringSnapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLineStringSnapper.m; sourceTree = "<group>"; };
+		A995F3ED163BEA9B0053E5D2 /* OTSSnapIfNeededOverlayOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSnapIfNeededOverlayOp.m; sourceTree = "<group>"; };
+		A995F3EE163BEA9B0053E5D2 /* OTSSnapOverlayOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSnapOverlayOp.m; sourceTree = "<group>"; };
+		A995F3F0163BEA9B0053E5D2 /* OTSOverlayResultValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSOverlayResultValidator.m; sourceTree = "<group>"; };
+		A995F3F2163BEA9B0053E5D2 /* OTSRectangleContains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRectangleContains.m; sourceTree = "<group>"; };
+		A995F3F3163BEA9B0053E5D2 /* OTSRectangleIntersects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRectangleIntersects.m; sourceTree = "<group>"; };
+		A995F3F4163BEA9B0053E5D2 /* OTSSegmentIntersectionTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSegmentIntersectionTester.m; sourceTree = "<group>"; };
+		A995F3F6163BEA9B0053E5D2 /* OTSEdgeEndBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeEndBuilder.m; sourceTree = "<group>"; };
+		A995F3F7163BEA9B0053E5D2 /* OTSEdgeEndBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeEndBundle.m; sourceTree = "<group>"; };
+		A995F3F8163BEA9B0053E5D2 /* OTSEdgeEndBundleStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSEdgeEndBundleStar.m; sourceTree = "<group>"; };
+		A995F3F9163BEA9B0053E5D2 /* OTSRelateComputer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRelateComputer.m; sourceTree = "<group>"; };
+		A995F3FA163BEA9B0053E5D2 /* OTSRelateNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRelateNode.m; sourceTree = "<group>"; };
+		A995F3FB163BEA9B0053E5D2 /* OTSRelateNodeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRelateNodeFactory.m; sourceTree = "<group>"; };
+		A995F3FC163BEA9B0053E5D2 /* OTSRelateNodeGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRelateNodeGraph.m; sourceTree = "<group>"; };
+		A995F3FD163BEA9B0053E5D2 /* OTSRelateOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRelateOp.m; sourceTree = "<group>"; };
+		A995F3FF163BEA9B0053E5D2 /* OTSCommonBits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCommonBits.m; sourceTree = "<group>"; };
+		A995F400163BEA9B0053E5D2 /* OTSCommonBitsRemover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCommonBitsRemover.m; sourceTree = "<group>"; };
+		A995F401163BEA9B0053E5D2 /* OTSSimpleGeometryPrecisionReducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSimpleGeometryPrecisionReducer.m; sourceTree = "<group>"; };
+		A995F403163BEA9B0053E5D2 /* OTSUniqueCoordinateArrayFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSUniqueCoordinateArrayFilter.m; sourceTree = "<group>"; };
+		A995F407163BEA9B0053E5D2 /* OTSSimplePointInAreaLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSimplePointInAreaLocator.h; sourceTree = "<group>"; };
+		A995F408163BEA9B0053E5D2 /* OTSBoundaryNodeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBoundaryNodeRule.h; sourceTree = "<group>"; };
+		A995F409163BEA9B0053E5D2 /* OTSCentralEndpointIntersector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCentralEndpointIntersector.h; sourceTree = "<group>"; };
+		A995F40A163BEA9B0053E5D2 /* OTSCGAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCGAlgorithms.h; sourceTree = "<group>"; };
+		A995F40B163BEA9B0053E5D2 /* OTSHCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSHCoordinate.h; sourceTree = "<group>"; };
+		A995F40C163BEA9B0053E5D2 /* OTSLineIntersector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLineIntersector.h; sourceTree = "<group>"; };
+		A995F40D163BEA9B0053E5D2 /* OTSNotRepresentableException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNotRepresentableException.h; sourceTree = "<group>"; };
+		A995F40E163BEA9B0053E5D2 /* OTSPointLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPointLocator.h; sourceTree = "<group>"; };
+		A995F40F163BEA9B0053E5D2 /* OTSPointOnGeometryLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPointOnGeometryLocator.h; sourceTree = "<group>"; };
+		A995F410163BEA9B0053E5D2 /* OTSRayCrossingCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRayCrossingCounter.h; sourceTree = "<group>"; };
+		A995F411163BEA9B0053E5D2 /* OTSRobustDeterminant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRobustDeterminant.h; sourceTree = "<group>"; };
+		A995F413163BEA9B0053E5D2 /* OTSCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCoordinate.h; sourceTree = "<group>"; };
+		A995F414163BEA9B0053E5D2 /* OTSCoordinateFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCoordinateFilter.h; sourceTree = "<group>"; };
+		A995F415163BEA9B0053E5D2 /* OTSCoordinateSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCoordinateSequence.h; sourceTree = "<group>"; };
+		A995F416163BEA9B0053E5D2 /* OTSCoordinateSequenceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCoordinateSequenceFactory.h; sourceTree = "<group>"; };
+		A995F417163BEA9B0053E5D2 /* OTSDefaultGeometryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSDefaultGeometryFactory.h; sourceTree = "<group>"; };
+		A995F418163BEA9B0053E5D2 /* OTSDimension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSDimension.h; sourceTree = "<group>"; };
+		A995F419163BEA9B0053E5D2 /* OTSEnvelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEnvelope.h; sourceTree = "<group>"; };
+		A995F41A163BEA9B0053E5D2 /* OTSGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometry.h; sourceTree = "<group>"; };
+		A995F41B163BEA9B0053E5D2 /* OTSGeometryCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometryCollection.h; sourceTree = "<group>"; };
+		A995F41C163BEA9B0053E5D2 /* OTSGeometryComponentFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometryComponentFilter.h; sourceTree = "<group>"; };
+		A995F41D163BEA9B0053E5D2 /* OTSGeometryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometryFactory.h; sourceTree = "<group>"; };
+		A995F41E163BEA9B0053E5D2 /* OTSGeometryFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometryFilter.h; sourceTree = "<group>"; };
+		A995F41F163BEA9B0053E5D2 /* OTSGeometryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometryList.h; sourceTree = "<group>"; };
+		A995F420163BEA9B0053E5D2 /* OTSIntersectionMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSIntersectionMatrix.h; sourceTree = "<group>"; };
+		A995F421163BEA9B0053E5D2 /* OTSLinearRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLinearRing.h; sourceTree = "<group>"; };
+		A995F422163BEA9B0053E5D2 /* OTSLineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLineSegment.h; sourceTree = "<group>"; };
+		A995F423163BEA9B0053E5D2 /* OTSLineString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLineString.h; sourceTree = "<group>"; };
+		A995F424163BEA9B0053E5D2 /* OTSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLocation.h; sourceTree = "<group>"; };
+		A995F425163BEA9B0053E5D2 /* OTSMultiLineString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSMultiLineString.h; sourceTree = "<group>"; };
+		A995F426163BEA9B0053E5D2 /* OTSMultiPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSMultiPoint.h; sourceTree = "<group>"; };
+		A995F427163BEA9B0053E5D2 /* OTSMultiPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSMultiPolygon.h; sourceTree = "<group>"; };
+		A995F428163BEA9B0053E5D2 /* OTSPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPoint.h; sourceTree = "<group>"; };
+		A995F429163BEA9B0053E5D2 /* OTSPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPolygon.h; sourceTree = "<group>"; };
+		A995F42A163BEA9B0053E5D2 /* OTSPrecisionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPrecisionModel.h; sourceTree = "<group>"; };
+		A995F42C163BEA9B0053E5D2 /* OTSGeometryTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometryTransformer.h; sourceTree = "<group>"; };
+		A995F42D163BEA9B0053E5D2 /* OTSLinearComponentExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLinearComponentExtractor.h; sourceTree = "<group>"; };
+		A995F42E163BEA9B0053E5D2 /* OTSPointExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPointExtractor.h; sourceTree = "<group>"; };
+		A995F42F163BEA9B0053E5D2 /* OTSPolygonExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPolygonExtractor.h; sourceTree = "<group>"; };
+		A995F430163BEA9B0053E5D2 /* OTSShortCircuitedGeometryVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSShortCircuitedGeometryVisitor.h; sourceTree = "<group>"; };
+		A995F433163BEA9B0053E5D2 /* OTSEdgeSetIntersector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeSetIntersector.h; sourceTree = "<group>"; };
+		A995F434163BEA9B0053E5D2 /* OTSMonotoneChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSMonotoneChain.h; sourceTree = "<group>"; };
+		A995F435163BEA9B0053E5D2 /* OTSMonotoneChainEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSMonotoneChainEdge.h; sourceTree = "<group>"; };
+		A995F436163BEA9B0053E5D2 /* OTSMonotoneChainIndexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSMonotoneChainIndexer.h; sourceTree = "<group>"; };
+		A995F437163BEA9B0053E5D2 /* OTSSegmentIntersector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSegmentIntersector.h; sourceTree = "<group>"; };
+		A995F438163BEA9B0053E5D2 /* OTSSimpleMCSweepLineIntersector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSimpleMCSweepLineIntersector.h; sourceTree = "<group>"; };
+		A995F439163BEA9B0053E5D2 /* OTSSweepLineEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSweepLineEvent.h; sourceTree = "<group>"; };
+		A995F43A163BEA9B0053E5D2 /* OTSSweepLineEventOBJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSweepLineEventOBJ.h; sourceTree = "<group>"; };
+		A995F43B163BEA9B0053E5D2 /* OTSDepth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSDepth.h; sourceTree = "<group>"; };
+		A995F43C163BEA9B0053E5D2 /* OTSDirectedEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSDirectedEdge.h; sourceTree = "<group>"; };
+		A995F43D163BEA9B0053E5D2 /* OTSDirectedEdgeStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSDirectedEdgeStar.h; sourceTree = "<group>"; };
+		A995F43E163BEA9B0053E5D2 /* OTSEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdge.h; sourceTree = "<group>"; };
+		A995F43F163BEA9B0053E5D2 /* OTSEdgeEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeEnd.h; sourceTree = "<group>"; };
+		A995F440163BEA9B0053E5D2 /* OTSEdgeEndStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeEndStar.h; sourceTree = "<group>"; };
+		A995F441163BEA9B0053E5D2 /* OTSEdgeIntersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeIntersection.h; sourceTree = "<group>"; };
+		A995F442163BEA9B0053E5D2 /* OTSEdgeIntersectionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeIntersectionList.h; sourceTree = "<group>"; };
+		A995F443163BEA9B0053E5D2 /* OTSEdgeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeList.h; sourceTree = "<group>"; };
+		A995F444163BEA9B0053E5D2 /* OTSEdgeNodingValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeNodingValidator.h; sourceTree = "<group>"; };
+		A995F445163BEA9B0053E5D2 /* OTSEdgeRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeRing.h; sourceTree = "<group>"; };
+		A995F446163BEA9B0053E5D2 /* OTSGeometryGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometryGraph.h; sourceTree = "<group>"; };
+		A995F447163BEA9B0053E5D2 /* OTSGraphComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGraphComponent.h; sourceTree = "<group>"; };
+		A995F448163BEA9B0053E5D2 /* OTSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLabel.h; sourceTree = "<group>"; };
+		A995F449163BEA9B0053E5D2 /* OTSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNode.h; sourceTree = "<group>"; };
+		A995F44A163BEA9B0053E5D2 /* OTSNodeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNodeFactory.h; sourceTree = "<group>"; };
+		A995F44B163BEA9B0053E5D2 /* OTSNodeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNodeMap.h; sourceTree = "<group>"; };
+		A995F44C163BEA9B0053E5D2 /* OTSPlanarGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPlanarGraph.h; sourceTree = "<group>"; };
+		A995F44D163BEA9B0053E5D2 /* OTSPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPosition.h; sourceTree = "<group>"; };
+		A995F44E163BEA9B0053E5D2 /* OTSQuadrant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSQuadrant.h; sourceTree = "<group>"; };
+		A995F44F163BEA9B0053E5D2 /* OTSTopologyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTopologyLocation.h; sourceTree = "<group>"; };
+		A995F451163BEA9B0053E5D2 /* OTSItemVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSItemVisitor.h; sourceTree = "<group>"; };
+		A995F452163BEA9B0053E5D2 /* OTSSpatialIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSpatialIndex.h; sourceTree = "<group>"; };
+		A995F454163BEA9B0053E5D2 /* OTSAbstractNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSAbstractNode.h; sourceTree = "<group>"; };
+		A995F455163BEA9B0053E5D2 /* OTSAbstractSTRtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSAbstractSTRtree.h; sourceTree = "<group>"; };
+		A995F456163BEA9B0053E5D2 /* OTSBoundable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBoundable.h; sourceTree = "<group>"; };
+		A995F457163BEA9B0053E5D2 /* OTSItemBoundable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSItemBoundable.h; sourceTree = "<group>"; };
+		A995F458163BEA9B0053E5D2 /* OTSSTRtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSTRtree.h; sourceTree = "<group>"; };
+		A995F45A163BEA9B0053E5D2 /* OTSOrientedCoordinateArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSOrientedCoordinateArray.h; sourceTree = "<group>"; };
+		A995F45D163BEA9B0053E5D2 /* OTSConnectedElementLocationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSConnectedElementLocationFilter.h; sourceTree = "<group>"; };
+		A995F45E163BEA9B0053E5D2 /* OTSConnectedElementPointFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSConnectedElementPointFilter.h; sourceTree = "<group>"; };
+		A995F45F163BEA9B0053E5D2 /* OTSDistanceOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSDistanceOp.h; sourceTree = "<group>"; };
+		A995F460163BEA9B0053E5D2 /* OTSGeometryLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometryLocation.h; sourceTree = "<group>"; };
+		A995F461163BEA9B0053E5D2 /* OTSGeometryGraphOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometryGraphOperation.h; sourceTree = "<group>"; };
+		A995F463163BEA9B0053E5D2 /* OTSElevationMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSElevationMatrix.h; sourceTree = "<group>"; };
+		A995F464163BEA9B0053E5D2 /* OTSElevationMatrixCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSElevationMatrixCell.h; sourceTree = "<group>"; };
+		A995F465163BEA9B0053E5D2 /* OTSLineBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLineBuilder.h; sourceTree = "<group>"; };
+		A995F466163BEA9B0053E5D2 /* OTSMaximalEdgeRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSMaximalEdgeRing.h; sourceTree = "<group>"; };
+		A995F467163BEA9B0053E5D2 /* OTSMinimalEdgeRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSMinimalEdgeRing.h; sourceTree = "<group>"; };
+		A995F468163BEA9B0053E5D2 /* OTSOverlayNodeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSOverlayNodeFactory.h; sourceTree = "<group>"; };
+		A995F469163BEA9B0053E5D2 /* OTSOverlayOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSOverlayOp.h; sourceTree = "<group>"; };
+		A995F46A163BEA9B0053E5D2 /* OTSPointBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPointBuilder.h; sourceTree = "<group>"; };
+		A995F46B163BEA9B0053E5D2 /* OTSPolygonBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPolygonBuilder.h; sourceTree = "<group>"; };
+		A995F46D163BEA9B0053E5D2 /* OTSGeometrySnapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGeometrySnapper.h; sourceTree = "<group>"; };
+		A995F46E163BEA9B0053E5D2 /* OTSLineStringSnapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLineStringSnapper.h; sourceTree = "<group>"; };
+		A995F46F163BEA9B0053E5D2 /* OTSSnapIfNeededOverlayOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSnapIfNeededOverlayOp.h; sourceTree = "<group>"; };
+		A995F470163BEA9B0053E5D2 /* OTSSnapOverlayOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSnapOverlayOp.h; sourceTree = "<group>"; };
+		A995F472163BEA9B0053E5D2 /* OTSOverlayResultValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSOverlayResultValidator.h; sourceTree = "<group>"; };
+		A995F474163BEA9B0053E5D2 /* OTSRectangleContains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRectangleContains.h; sourceTree = "<group>"; };
+		A995F475163BEA9B0053E5D2 /* OTSRectangleIntersects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRectangleIntersects.h; sourceTree = "<group>"; };
+		A995F476163BEA9B0053E5D2 /* OTSSegmentIntersectionTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSegmentIntersectionTester.h; sourceTree = "<group>"; };
+		A995F478163BEA9B0053E5D2 /* OTSEdgeEndBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeEndBuilder.h; sourceTree = "<group>"; };
+		A995F479163BEA9B0053E5D2 /* OTSEdgeEndBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeEndBundle.h; sourceTree = "<group>"; };
+		A995F47A163BEA9B0053E5D2 /* OTSEdgeEndBundleStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEdgeEndBundleStar.h; sourceTree = "<group>"; };
+		A995F47B163BEA9B0053E5D2 /* OTSRelateComputer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRelateComputer.h; sourceTree = "<group>"; };
+		A995F47C163BEA9B0053E5D2 /* OTSRelateNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRelateNode.h; sourceTree = "<group>"; };
+		A995F47D163BEA9B0053E5D2 /* OTSRelateNodeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRelateNodeFactory.h; sourceTree = "<group>"; };
+		A995F47E163BEA9B0053E5D2 /* OTSRelateNodeGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRelateNodeGraph.h; sourceTree = "<group>"; };
+		A995F47F163BEA9B0053E5D2 /* OTSRelateOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRelateOp.h; sourceTree = "<group>"; };
+		A995F481163BEA9B0053E5D2 /* OTSCommonBits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCommonBits.h; sourceTree = "<group>"; };
+		A995F482163BEA9B0053E5D2 /* OTSCommonBitsRemover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCommonBitsRemover.h; sourceTree = "<group>"; };
+		A995F483163BEA9B0053E5D2 /* OTSSimpleGeometryPrecisionReducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSimpleGeometryPrecisionReducer.h; sourceTree = "<group>"; };
+		A995F485163BEA9B0053E5D2 /* OTSUniqueCoordinateArrayFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSUniqueCoordinateArrayFilter.h; sourceTree = "<group>"; };
+		A995F565163BF8910053E5D2 /* IntersectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntersectionTest.m; sourceTree = "<group>"; };
+		A995F566163BF8910053E5D2 /* LineSegmentTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineSegmentTest.m; sourceTree = "<group>"; };
+		A995F567163BF8910053E5D2 /* RelateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelateTest.m; sourceTree = "<group>"; };
+		A995F56A163BF8910053E5D2 /* STRtreeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRtreeTest.h; sourceTree = "<group>"; };
+		A995F56B163BF8910053E5D2 /* STRtreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRtreeTest.m; sourceTree = "<group>"; };
+		A995F56E163BF8910053E5D2 /* DistanceOpTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceOpTest.m; sourceTree = "<group>"; };
+		A995F571163BF8910053E5D2 /* SnapOverlayOpTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapOverlayOpTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A995F358163BE7F50053E5D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A995F35F163BE7F50053E5D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A995F368163BE7F50053E5D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A995F36E163BE7F50053E5D2 /* SenTestingKit.framework in Frameworks */,
+				A995F370163BE7F50053E5D2 /* UIKit.framework in Frameworks */,
+				A995F371163BE7F50053E5D2 /* Foundation.framework in Frameworks */,
+				A995F374163BE7F50053E5D2 /* libOTS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A995F350163BE7F50053E5D2 = {
+			isa = PBXGroup;
+			children = (
+				A995F360163BE7F50053E5D2 /* OTS */,
+				A995F375163BE7F50053E5D2 /* OTSTests */,
+				A995F35D163BE7F50053E5D2 /* Frameworks */,
+				A995F35C163BE7F50053E5D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A995F35C163BE7F50053E5D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A995F35B163BE7F50053E5D2 /* libOTS.a */,
+				A995F36C163BE7F50053E5D2 /* OTSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A995F35D163BE7F50053E5D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A995F35E163BE7F50053E5D2 /* Foundation.framework */,
+				A995F36D163BE7F50053E5D2 /* SenTestingKit.framework */,
+				A995F36F163BE7F50053E5D2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A995F360163BE7F50053E5D2 /* OTS */ = {
+			isa = PBXGroup;
+			children = (
+				A995F386163BEA9B0053E5D2 /* Classes */,
+				A995F404163BEA9B0053E5D2 /* Headers */,
+				A995F361163BE7F50053E5D2 /* Supporting Files */,
+			);
+			path = OTS;
+			sourceTree = "<group>";
+		};
+		A995F361163BE7F50053E5D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A995F362163BE7F50053E5D2 /* OTS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A995F375163BE7F50053E5D2 /* OTSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A995F564163BF8910053E5D2 /* Geom */,
+				A995F568163BF8910053E5D2 /* Index */,
+				A995F56C163BF8910053E5D2 /* Operation */,
+				A995F376163BE7F50053E5D2 /* Supporting Files */,
+			);
+			path = OTSTests;
+			sourceTree = "<group>";
+		};
+		A995F376163BE7F50053E5D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A995F377163BE7F50053E5D2 /* OTSTests-Info.plist */,
+				A995F378163BE7F50053E5D2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A995F386163BEA9B0053E5D2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A995F387163BEA9B0053E5D2 /* Algorithm */,
+				A995F394163BEA9B0053E5D2 /* Geom */,
+				A995F3B2163BEA9B0053E5D2 /* GeomGraph */,
+				A995F3D1163BEA9B0053E5D2 /* Index */,
+				A995F3D7163BEA9B0053E5D2 /* Noding */,
+				A995F3D9163BEA9B0053E5D2 /* Operation */,
+				A995F3FE163BEA9B0053E5D2 /* Precision */,
+				A995F402163BEA9B0053E5D2 /* Util */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A995F387163BEA9B0053E5D2 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				A995F388163BEA9B0053E5D2 /* Locate */,
+				A995F38A163BEA9B0053E5D2 /* OTSBoundaryNodeRule.m */,
+				A995F38B163BEA9B0053E5D2 /* OTSCentralEndpointIntersector.m */,
+				A995F38C163BEA9B0053E5D2 /* OTSCGAlgorithms.m */,
+				A995F38D163BEA9B0053E5D2 /* OTSHCoordinate.m */,
+				A995F38E163BEA9B0053E5D2 /* OTSLineIntersector.m */,
+				A995F38F163BEA9B0053E5D2 /* OTSNotRepresentableException.m */,
+				A995F390163BEA9B0053E5D2 /* OTSPointLocator.m */,
+				A995F391163BEA9B0053E5D2 /* OTSPointOnGeometryLocator.m */,
+				A995F392163BEA9B0053E5D2 /* OTSRayCrossingCounter.m */,
+				A995F393163BEA9B0053E5D2 /* OTSRobustDeterminant.m */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		A995F388163BEA9B0053E5D2 /* Locate */ = {
+			isa = PBXGroup;
+			children = (
+				A995F389163BEA9B0053E5D2 /* OTSSimplePointInAreaLocator.m */,
+			);
+			path = Locate;
+			sourceTree = "<group>";
+		};
+		A995F394163BEA9B0053E5D2 /* Geom */ = {
+			isa = PBXGroup;
+			children = (
+				A995F395163BEA9B0053E5D2 /* OTSCoordinate.m */,
+				A995F396163BEA9B0053E5D2 /* OTSCoordinateFilter.m */,
+				A995F397163BEA9B0053E5D2 /* OTSCoordinateSequence.m */,
+				A995F398163BEA9B0053E5D2 /* OTSCoordinateSequenceFactory.m */,
+				A995F399163BEA9B0053E5D2 /* OTSDefaultGeometryFactory.m */,
+				A995F39A163BEA9B0053E5D2 /* OTSDimension.m */,
+				A995F39B163BEA9B0053E5D2 /* OTSEnvelope.m */,
+				A995F39C163BEA9B0053E5D2 /* OTSGeometry.m */,
+				A995F39D163BEA9B0053E5D2 /* OTSGeometryCollection.m */,
+				A995F39E163BEA9B0053E5D2 /* OTSGeometryComponentFilter.m */,
+				A995F39F163BEA9B0053E5D2 /* OTSGeometryFactory.m */,
+				A995F3A0163BEA9B0053E5D2 /* OTSGeometryList.m */,
+				A995F3A1163BEA9B0053E5D2 /* OTSIntersectionMatrix.m */,
+				A995F3A2163BEA9B0053E5D2 /* OTSLinearRing.m */,
+				A995F3A3163BEA9B0053E5D2 /* OTSLineSegment.m */,
+				A995F3A4163BEA9B0053E5D2 /* OTSLineString.m */,
+				A995F3A5163BEA9B0053E5D2 /* OTSLocation.m */,
+				A995F3A6163BEA9B0053E5D2 /* OTSMultiLineString.m */,
+				A995F3A7163BEA9B0053E5D2 /* OTSMultiPoint.m */,
+				A995F3A8163BEA9B0053E5D2 /* OTSMultiPolygon.m */,
+				A995F3A9163BEA9B0053E5D2 /* OTSPoint.m */,
+				A995F3AA163BEA9B0053E5D2 /* OTSPolygon.m */,
+				A995F3AB163BEA9B0053E5D2 /* OTSPrecisionModel.m */,
+				A995F3AC163BEA9B0053E5D2 /* Util */,
+			);
+			path = Geom;
+			sourceTree = "<group>";
+		};
+		A995F3AC163BEA9B0053E5D2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3AD163BEA9B0053E5D2 /* OTSGeometryTransformer.m */,
+				A995F3AE163BEA9B0053E5D2 /* OTSLinearComponentExtractor.m */,
+				A995F3AF163BEA9B0053E5D2 /* OTSPointExtractor.m */,
+				A995F3B0163BEA9B0053E5D2 /* OTSPolygonExtractor.m */,
+				A995F3B1163BEA9B0053E5D2 /* OTSShortCircuitedGeometryVisitor.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A995F3B2163BEA9B0053E5D2 /* GeomGraph */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3B3163BEA9B0053E5D2 /* Index */,
+				A995F3BC163BEA9B0053E5D2 /* OTSDepth.m */,
+				A995F3BD163BEA9B0053E5D2 /* OTSDirectedEdge.m */,
+				A995F3BE163BEA9B0053E5D2 /* OTSDirectedEdgeStar.m */,
+				A995F3BF163BEA9B0053E5D2 /* OTSEdge.m */,
+				A995F3C0163BEA9B0053E5D2 /* OTSEdgeEnd.m */,
+				A995F3C1163BEA9B0053E5D2 /* OTSEdgeEndStar.m */,
+				A995F3C2163BEA9B0053E5D2 /* OTSEdgeIntersection.m */,
+				A995F3C3163BEA9B0053E5D2 /* OTSEdgeIntersectionList.m */,
+				A995F3C4163BEA9B0053E5D2 /* OTSEdgeList.m */,
+				A995F3C5163BEA9B0053E5D2 /* OTSEdgeNodingValidator.m */,
+				A995F3C6163BEA9B0053E5D2 /* OTSEdgeRing.m */,
+				A995F3C7163BEA9B0053E5D2 /* OTSGeometryGraph.m */,
+				A995F3C8163BEA9B0053E5D2 /* OTSGraphComponent.m */,
+				A995F3C9163BEA9B0053E5D2 /* OTSLabel.m */,
+				A995F3CA163BEA9B0053E5D2 /* OTSNode.m */,
+				A995F3CB163BEA9B0053E5D2 /* OTSNodeFactory.m */,
+				A995F3CC163BEA9B0053E5D2 /* OTSNodeMap.m */,
+				A995F3CD163BEA9B0053E5D2 /* OTSPlanarGraph.m */,
+				A995F3CE163BEA9B0053E5D2 /* OTSPosition.m */,
+				A995F3CF163BEA9B0053E5D2 /* OTSQuadrant.m */,
+				A995F3D0163BEA9B0053E5D2 /* OTSTopologyLocation.m */,
+			);
+			path = GeomGraph;
+			sourceTree = "<group>";
+		};
+		A995F3B3163BEA9B0053E5D2 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3B4163BEA9B0053E5D2 /* OTSEdgeSetIntersector.m */,
+				A995F3B5163BEA9B0053E5D2 /* OTSMonotoneChain.m */,
+				A995F3B6163BEA9B0053E5D2 /* OTSMonotoneChainEdge.m */,
+				A995F3B7163BEA9B0053E5D2 /* OTSMonotoneChainIndexer.m */,
+				A995F3B8163BEA9B0053E5D2 /* OTSSegmentIntersector.m */,
+				A995F3B9163BEA9B0053E5D2 /* OTSSimpleMCSweepLineIntersector.m */,
+				A995F3BA163BEA9B0053E5D2 /* OTSSweepLineEvent.m */,
+				A995F3BB163BEA9B0053E5D2 /* OTSSweepLineEventOBJ.m */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		A995F3D1163BEA9B0053E5D2 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3D2163BEA9B0053E5D2 /* STRtree */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		A995F3D2163BEA9B0053E5D2 /* STRtree */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3D3163BEA9B0053E5D2 /* OTSAbstractNode.m */,
+				A995F3D4163BEA9B0053E5D2 /* OTSAbstractSTRtree.m */,
+				A995F3D5163BEA9B0053E5D2 /* OTSItemBoundable.m */,
+				A995F3D6163BEA9B0053E5D2 /* OTSSTRtree.m */,
+			);
+			path = STRtree;
+			sourceTree = "<group>";
+		};
+		A995F3D7163BEA9B0053E5D2 /* Noding */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3D8163BEA9B0053E5D2 /* OTSOrientedCoordinateArray.m */,
+			);
+			path = Noding;
+			sourceTree = "<group>";
+		};
+		A995F3D9163BEA9B0053E5D2 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3DA163BEA9B0053E5D2 /* Distance */,
+				A995F3DF163BEA9B0053E5D2 /* OTSGeometryGraphOperation.m */,
+				A995F3E0163BEA9B0053E5D2 /* Overlay */,
+				A995F3F1163BEA9B0053E5D2 /* Predicate */,
+				A995F3F5163BEA9B0053E5D2 /* Relate */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		A995F3DA163BEA9B0053E5D2 /* Distance */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3DB163BEA9B0053E5D2 /* OTSConnectedElementLocationFilter.m */,
+				A995F3DC163BEA9B0053E5D2 /* OTSConnectedElementPointFilter.m */,
+				A995F3DD163BEA9B0053E5D2 /* OTSDistanceOp.m */,
+				A995F3DE163BEA9B0053E5D2 /* OTSGeometryLocation.m */,
+			);
+			path = Distance;
+			sourceTree = "<group>";
+		};
+		A995F3E0163BEA9B0053E5D2 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3E1163BEA9B0053E5D2 /* OTSElevationMatrix.m */,
+				A995F3E2163BEA9B0053E5D2 /* OTSElevationMatrixCell.m */,
+				A995F3E3163BEA9B0053E5D2 /* OTSLineBuilder.m */,
+				A995F3E4163BEA9B0053E5D2 /* OTSMaximalEdgeRing.m */,
+				A995F3E5163BEA9B0053E5D2 /* OTSMinimalEdgeRing.m */,
+				A995F3E6163BEA9B0053E5D2 /* OTSOverlayNodeFactory.m */,
+				A995F3E7163BEA9B0053E5D2 /* OTSOverlayOp.m */,
+				A995F3E8163BEA9B0053E5D2 /* OTSPointBuilder.m */,
+				A995F3E9163BEA9B0053E5D2 /* OTSPolygonBuilder.m */,
+				A995F3EA163BEA9B0053E5D2 /* Snap */,
+				A995F3EF163BEA9B0053E5D2 /* Validate */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		A995F3EA163BEA9B0053E5D2 /* Snap */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3EB163BEA9B0053E5D2 /* OTSGeometrySnapper.m */,
+				A995F3EC163BEA9B0053E5D2 /* OTSLineStringSnapper.m */,
+				A995F3ED163BEA9B0053E5D2 /* OTSSnapIfNeededOverlayOp.m */,
+				A995F3EE163BEA9B0053E5D2 /* OTSSnapOverlayOp.m */,
+			);
+			path = Snap;
+			sourceTree = "<group>";
+		};
+		A995F3EF163BEA9B0053E5D2 /* Validate */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3F0163BEA9B0053E5D2 /* OTSOverlayResultValidator.m */,
+			);
+			path = Validate;
+			sourceTree = "<group>";
+		};
+		A995F3F1163BEA9B0053E5D2 /* Predicate */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3F2163BEA9B0053E5D2 /* OTSRectangleContains.m */,
+				A995F3F3163BEA9B0053E5D2 /* OTSRectangleIntersects.m */,
+				A995F3F4163BEA9B0053E5D2 /* OTSSegmentIntersectionTester.m */,
+			);
+			path = Predicate;
+			sourceTree = "<group>";
+		};
+		A995F3F5163BEA9B0053E5D2 /* Relate */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3F6163BEA9B0053E5D2 /* OTSEdgeEndBuilder.m */,
+				A995F3F7163BEA9B0053E5D2 /* OTSEdgeEndBundle.m */,
+				A995F3F8163BEA9B0053E5D2 /* OTSEdgeEndBundleStar.m */,
+				A995F3F9163BEA9B0053E5D2 /* OTSRelateComputer.m */,
+				A995F3FA163BEA9B0053E5D2 /* OTSRelateNode.m */,
+				A995F3FB163BEA9B0053E5D2 /* OTSRelateNodeFactory.m */,
+				A995F3FC163BEA9B0053E5D2 /* OTSRelateNodeGraph.m */,
+				A995F3FD163BEA9B0053E5D2 /* OTSRelateOp.m */,
+			);
+			path = Relate;
+			sourceTree = "<group>";
+		};
+		A995F3FE163BEA9B0053E5D2 /* Precision */ = {
+			isa = PBXGroup;
+			children = (
+				A995F3FF163BEA9B0053E5D2 /* OTSCommonBits.m */,
+				A995F400163BEA9B0053E5D2 /* OTSCommonBitsRemover.m */,
+				A995F401163BEA9B0053E5D2 /* OTSSimpleGeometryPrecisionReducer.m */,
+			);
+			path = Precision;
+			sourceTree = "<group>";
+		};
+		A995F402163BEA9B0053E5D2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A995F403163BEA9B0053E5D2 /* OTSUniqueCoordinateArrayFilter.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A995F404163BEA9B0053E5D2 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A995F405163BEA9B0053E5D2 /* Algorithm */,
+				A995F412163BEA9B0053E5D2 /* Geom */,
+				A995F431163BEA9B0053E5D2 /* GeomGraph */,
+				A995F450163BEA9B0053E5D2 /* Index */,
+				A995F459163BEA9B0053E5D2 /* Noding */,
+				A995F45B163BEA9B0053E5D2 /* Operation */,
+				A995F480163BEA9B0053E5D2 /* Precision */,
+				A995F484163BEA9B0053E5D2 /* Util */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		A995F405163BEA9B0053E5D2 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				A995F406163BEA9B0053E5D2 /* Locate */,
+				A995F408163BEA9B0053E5D2 /* OTSBoundaryNodeRule.h */,
+				A995F409163BEA9B0053E5D2 /* OTSCentralEndpointIntersector.h */,
+				A995F40A163BEA9B0053E5D2 /* OTSCGAlgorithms.h */,
+				A995F40B163BEA9B0053E5D2 /* OTSHCoordinate.h */,
+				A995F40C163BEA9B0053E5D2 /* OTSLineIntersector.h */,
+				A995F40D163BEA9B0053E5D2 /* OTSNotRepresentableException.h */,
+				A995F40E163BEA9B0053E5D2 /* OTSPointLocator.h */,
+				A995F40F163BEA9B0053E5D2 /* OTSPointOnGeometryLocator.h */,
+				A995F410163BEA9B0053E5D2 /* OTSRayCrossingCounter.h */,
+				A995F411163BEA9B0053E5D2 /* OTSRobustDeterminant.h */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		A995F406163BEA9B0053E5D2 /* Locate */ = {
+			isa = PBXGroup;
+			children = (
+				A995F407163BEA9B0053E5D2 /* OTSSimplePointInAreaLocator.h */,
+			);
+			path = Locate;
+			sourceTree = "<group>";
+		};
+		A995F412163BEA9B0053E5D2 /* Geom */ = {
+			isa = PBXGroup;
+			children = (
+				A995F413163BEA9B0053E5D2 /* OTSCoordinate.h */,
+				A995F414163BEA9B0053E5D2 /* OTSCoordinateFilter.h */,
+				A995F415163BEA9B0053E5D2 /* OTSCoordinateSequence.h */,
+				A995F416163BEA9B0053E5D2 /* OTSCoordinateSequenceFactory.h */,
+				A995F417163BEA9B0053E5D2 /* OTSDefaultGeometryFactory.h */,
+				A995F418163BEA9B0053E5D2 /* OTSDimension.h */,
+				A995F419163BEA9B0053E5D2 /* OTSEnvelope.h */,
+				A995F41A163BEA9B0053E5D2 /* OTSGeometry.h */,
+				A995F41B163BEA9B0053E5D2 /* OTSGeometryCollection.h */,
+				A995F41C163BEA9B0053E5D2 /* OTSGeometryComponentFilter.h */,
+				A995F41D163BEA9B0053E5D2 /* OTSGeometryFactory.h */,
+				A995F41E163BEA9B0053E5D2 /* OTSGeometryFilter.h */,
+				A995F41F163BEA9B0053E5D2 /* OTSGeometryList.h */,
+				A995F420163BEA9B0053E5D2 /* OTSIntersectionMatrix.h */,
+				A995F421163BEA9B0053E5D2 /* OTSLinearRing.h */,
+				A995F422163BEA9B0053E5D2 /* OTSLineSegment.h */,
+				A995F423163BEA9B0053E5D2 /* OTSLineString.h */,
+				A995F424163BEA9B0053E5D2 /* OTSLocation.h */,
+				A995F425163BEA9B0053E5D2 /* OTSMultiLineString.h */,
+				A995F426163BEA9B0053E5D2 /* OTSMultiPoint.h */,
+				A995F427163BEA9B0053E5D2 /* OTSMultiPolygon.h */,
+				A995F428163BEA9B0053E5D2 /* OTSPoint.h */,
+				A995F429163BEA9B0053E5D2 /* OTSPolygon.h */,
+				A995F42A163BEA9B0053E5D2 /* OTSPrecisionModel.h */,
+				A995F42B163BEA9B0053E5D2 /* Util */,
+			);
+			path = Geom;
+			sourceTree = "<group>";
+		};
+		A995F42B163BEA9B0053E5D2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A995F42C163BEA9B0053E5D2 /* OTSGeometryTransformer.h */,
+				A995F42D163BEA9B0053E5D2 /* OTSLinearComponentExtractor.h */,
+				A995F42E163BEA9B0053E5D2 /* OTSPointExtractor.h */,
+				A995F42F163BEA9B0053E5D2 /* OTSPolygonExtractor.h */,
+				A995F430163BEA9B0053E5D2 /* OTSShortCircuitedGeometryVisitor.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A995F431163BEA9B0053E5D2 /* GeomGraph */ = {
+			isa = PBXGroup;
+			children = (
+				A995F432163BEA9B0053E5D2 /* Index */,
+				A995F43B163BEA9B0053E5D2 /* OTSDepth.h */,
+				A995F43C163BEA9B0053E5D2 /* OTSDirectedEdge.h */,
+				A995F43D163BEA9B0053E5D2 /* OTSDirectedEdgeStar.h */,
+				A995F43E163BEA9B0053E5D2 /* OTSEdge.h */,
+				A995F43F163BEA9B0053E5D2 /* OTSEdgeEnd.h */,
+				A995F440163BEA9B0053E5D2 /* OTSEdgeEndStar.h */,
+				A995F441163BEA9B0053E5D2 /* OTSEdgeIntersection.h */,
+				A995F442163BEA9B0053E5D2 /* OTSEdgeIntersectionList.h */,
+				A995F443163BEA9B0053E5D2 /* OTSEdgeList.h */,
+				A995F444163BEA9B0053E5D2 /* OTSEdgeNodingValidator.h */,
+				A995F445163BEA9B0053E5D2 /* OTSEdgeRing.h */,
+				A995F446163BEA9B0053E5D2 /* OTSGeometryGraph.h */,
+				A995F447163BEA9B0053E5D2 /* OTSGraphComponent.h */,
+				A995F448163BEA9B0053E5D2 /* OTSLabel.h */,
+				A995F449163BEA9B0053E5D2 /* OTSNode.h */,
+				A995F44A163BEA9B0053E5D2 /* OTSNodeFactory.h */,
+				A995F44B163BEA9B0053E5D2 /* OTSNodeMap.h */,
+				A995F44C163BEA9B0053E5D2 /* OTSPlanarGraph.h */,
+				A995F44D163BEA9B0053E5D2 /* OTSPosition.h */,
+				A995F44E163BEA9B0053E5D2 /* OTSQuadrant.h */,
+				A995F44F163BEA9B0053E5D2 /* OTSTopologyLocation.h */,
+			);
+			path = GeomGraph;
+			sourceTree = "<group>";
+		};
+		A995F432163BEA9B0053E5D2 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				A995F433163BEA9B0053E5D2 /* OTSEdgeSetIntersector.h */,
+				A995F434163BEA9B0053E5D2 /* OTSMonotoneChain.h */,
+				A995F435163BEA9B0053E5D2 /* OTSMonotoneChainEdge.h */,
+				A995F436163BEA9B0053E5D2 /* OTSMonotoneChainIndexer.h */,
+				A995F437163BEA9B0053E5D2 /* OTSSegmentIntersector.h */,
+				A995F438163BEA9B0053E5D2 /* OTSSimpleMCSweepLineIntersector.h */,
+				A995F439163BEA9B0053E5D2 /* OTSSweepLineEvent.h */,
+				A995F43A163BEA9B0053E5D2 /* OTSSweepLineEventOBJ.h */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		A995F450163BEA9B0053E5D2 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				A995F451163BEA9B0053E5D2 /* OTSItemVisitor.h */,
+				A995F452163BEA9B0053E5D2 /* OTSSpatialIndex.h */,
+				A995F453163BEA9B0053E5D2 /* STRtree */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		A995F453163BEA9B0053E5D2 /* STRtree */ = {
+			isa = PBXGroup;
+			children = (
+				A995F454163BEA9B0053E5D2 /* OTSAbstractNode.h */,
+				A995F455163BEA9B0053E5D2 /* OTSAbstractSTRtree.h */,
+				A995F456163BEA9B0053E5D2 /* OTSBoundable.h */,
+				A995F457163BEA9B0053E5D2 /* OTSItemBoundable.h */,
+				A995F458163BEA9B0053E5D2 /* OTSSTRtree.h */,
+			);
+			path = STRtree;
+			sourceTree = "<group>";
+		};
+		A995F459163BEA9B0053E5D2 /* Noding */ = {
+			isa = PBXGroup;
+			children = (
+				A995F45A163BEA9B0053E5D2 /* OTSOrientedCoordinateArray.h */,
+			);
+			path = Noding;
+			sourceTree = "<group>";
+		};
+		A995F45B163BEA9B0053E5D2 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				A995F45C163BEA9B0053E5D2 /* Distance */,
+				A995F461163BEA9B0053E5D2 /* OTSGeometryGraphOperation.h */,
+				A995F462163BEA9B0053E5D2 /* Overlay */,
+				A995F473163BEA9B0053E5D2 /* Predicate */,
+				A995F477163BEA9B0053E5D2 /* Relate */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		A995F45C163BEA9B0053E5D2 /* Distance */ = {
+			isa = PBXGroup;
+			children = (
+				A995F45D163BEA9B0053E5D2 /* OTSConnectedElementLocationFilter.h */,
+				A995F45E163BEA9B0053E5D2 /* OTSConnectedElementPointFilter.h */,
+				A995F45F163BEA9B0053E5D2 /* OTSDistanceOp.h */,
+				A995F460163BEA9B0053E5D2 /* OTSGeometryLocation.h */,
+			);
+			path = Distance;
+			sourceTree = "<group>";
+		};
+		A995F462163BEA9B0053E5D2 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				A995F463163BEA9B0053E5D2 /* OTSElevationMatrix.h */,
+				A995F464163BEA9B0053E5D2 /* OTSElevationMatrixCell.h */,
+				A995F465163BEA9B0053E5D2 /* OTSLineBuilder.h */,
+				A995F466163BEA9B0053E5D2 /* OTSMaximalEdgeRing.h */,
+				A995F467163BEA9B0053E5D2 /* OTSMinimalEdgeRing.h */,
+				A995F468163BEA9B0053E5D2 /* OTSOverlayNodeFactory.h */,
+				A995F469163BEA9B0053E5D2 /* OTSOverlayOp.h */,
+				A995F46A163BEA9B0053E5D2 /* OTSPointBuilder.h */,
+				A995F46B163BEA9B0053E5D2 /* OTSPolygonBuilder.h */,
+				A995F46C163BEA9B0053E5D2 /* Snap */,
+				A995F471163BEA9B0053E5D2 /* Validate */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		A995F46C163BEA9B0053E5D2 /* Snap */ = {
+			isa = PBXGroup;
+			children = (
+				A995F46D163BEA9B0053E5D2 /* OTSGeometrySnapper.h */,
+				A995F46E163BEA9B0053E5D2 /* OTSLineStringSnapper.h */,
+				A995F46F163BEA9B0053E5D2 /* OTSSnapIfNeededOverlayOp.h */,
+				A995F470163BEA9B0053E5D2 /* OTSSnapOverlayOp.h */,
+			);
+			path = Snap;
+			sourceTree = "<group>";
+		};
+		A995F471163BEA9B0053E5D2 /* Validate */ = {
+			isa = PBXGroup;
+			children = (
+				A995F472163BEA9B0053E5D2 /* OTSOverlayResultValidator.h */,
+			);
+			path = Validate;
+			sourceTree = "<group>";
+		};
+		A995F473163BEA9B0053E5D2 /* Predicate */ = {
+			isa = PBXGroup;
+			children = (
+				A995F474163BEA9B0053E5D2 /* OTSRectangleContains.h */,
+				A995F475163BEA9B0053E5D2 /* OTSRectangleIntersects.h */,
+				A995F476163BEA9B0053E5D2 /* OTSSegmentIntersectionTester.h */,
+			);
+			path = Predicate;
+			sourceTree = "<group>";
+		};
+		A995F477163BEA9B0053E5D2 /* Relate */ = {
+			isa = PBXGroup;
+			children = (
+				A995F478163BEA9B0053E5D2 /* OTSEdgeEndBuilder.h */,
+				A995F479163BEA9B0053E5D2 /* OTSEdgeEndBundle.h */,
+				A995F47A163BEA9B0053E5D2 /* OTSEdgeEndBundleStar.h */,
+				A995F47B163BEA9B0053E5D2 /* OTSRelateComputer.h */,
+				A995F47C163BEA9B0053E5D2 /* OTSRelateNode.h */,
+				A995F47D163BEA9B0053E5D2 /* OTSRelateNodeFactory.h */,
+				A995F47E163BEA9B0053E5D2 /* OTSRelateNodeGraph.h */,
+				A995F47F163BEA9B0053E5D2 /* OTSRelateOp.h */,
+			);
+			path = Relate;
+			sourceTree = "<group>";
+		};
+		A995F480163BEA9B0053E5D2 /* Precision */ = {
+			isa = PBXGroup;
+			children = (
+				A995F481163BEA9B0053E5D2 /* OTSCommonBits.h */,
+				A995F482163BEA9B0053E5D2 /* OTSCommonBitsRemover.h */,
+				A995F483163BEA9B0053E5D2 /* OTSSimpleGeometryPrecisionReducer.h */,
+			);
+			path = Precision;
+			sourceTree = "<group>";
+		};
+		A995F484163BEA9B0053E5D2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A995F485163BEA9B0053E5D2 /* OTSUniqueCoordinateArrayFilter.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A995F564163BF8910053E5D2 /* Geom */ = {
+			isa = PBXGroup;
+			children = (
+				A995F565163BF8910053E5D2 /* IntersectionTest.m */,
+				A995F566163BF8910053E5D2 /* LineSegmentTest.m */,
+				A995F567163BF8910053E5D2 /* RelateTest.m */,
+			);
+			path = Geom;
+			sourceTree = "<group>";
+		};
+		A995F568163BF8910053E5D2 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				A995F569163BF8910053E5D2 /* STRtree */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		A995F569163BF8910053E5D2 /* STRtree */ = {
+			isa = PBXGroup;
+			children = (
+				A995F56A163BF8910053E5D2 /* STRtreeTest.h */,
+				A995F56B163BF8910053E5D2 /* STRtreeTest.m */,
+			);
+			path = STRtree;
+			sourceTree = "<group>";
+		};
+		A995F56C163BF8910053E5D2 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				A995F56D163BF8910053E5D2 /* Distance */,
+				A995F56F163BF8910053E5D2 /* Overlay */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		A995F56D163BF8910053E5D2 /* Distance */ = {
+			isa = PBXGroup;
+			children = (
+				A995F56E163BF8910053E5D2 /* DistanceOpTest.m */,
+			);
+			path = Distance;
+			sourceTree = "<group>";
+		};
+		A995F56F163BF8910053E5D2 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				A995F570163BF8910053E5D2 /* Snap */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		A995F570163BF8910053E5D2 /* Snap */ = {
+			isa = PBXGroup;
+			children = (
+				A995F571163BF8910053E5D2 /* SnapOverlayOpTest.m */,
+			);
+			path = Snap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A995F4F4163BF40F0053E5D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A995F4F5163BF49E0053E5D2 /* OTSSimplePointInAreaLocator.h in Headers */,
+				A995F4F6163BF49E0053E5D2 /* OTSBoundaryNodeRule.h in Headers */,
+				A995F4F7163BF49E0053E5D2 /* OTSCentralEndpointIntersector.h in Headers */,
+				A995F4F8163BF49E0053E5D2 /* OTSCGAlgorithms.h in Headers */,
+				A995F4F9163BF49E0053E5D2 /* OTSHCoordinate.h in Headers */,
+				A995F4FA163BF49E0053E5D2 /* OTSLineIntersector.h in Headers */,
+				A995F4FB163BF49E0053E5D2 /* OTSNotRepresentableException.h in Headers */,
+				A995F4FC163BF49E0053E5D2 /* OTSPointLocator.h in Headers */,
+				A995F4FD163BF49E0053E5D2 /* OTSPointOnGeometryLocator.h in Headers */,
+				A995F4FE163BF49E0053E5D2 /* OTSRayCrossingCounter.h in Headers */,
+				A995F4FF163BF49E0053E5D2 /* OTSRobustDeterminant.h in Headers */,
+				A995F500163BF49E0053E5D2 /* OTSCoordinate.h in Headers */,
+				A995F501163BF49E0053E5D2 /* OTSCoordinateFilter.h in Headers */,
+				A995F502163BF49E0053E5D2 /* OTSCoordinateSequence.h in Headers */,
+				A995F503163BF49E0053E5D2 /* OTSCoordinateSequenceFactory.h in Headers */,
+				A995F504163BF49E0053E5D2 /* OTSDefaultGeometryFactory.h in Headers */,
+				A995F505163BF49E0053E5D2 /* OTSDimension.h in Headers */,
+				A995F506163BF49E0053E5D2 /* OTSEnvelope.h in Headers */,
+				A995F507163BF49E0053E5D2 /* OTSGeometry.h in Headers */,
+				A995F508163BF49E0053E5D2 /* OTSGeometryCollection.h in Headers */,
+				A995F509163BF49E0053E5D2 /* OTSGeometryComponentFilter.h in Headers */,
+				A995F50A163BF49E0053E5D2 /* OTSGeometryFactory.h in Headers */,
+				A995F50B163BF49E0053E5D2 /* OTSGeometryFilter.h in Headers */,
+				A995F50C163BF49E0053E5D2 /* OTSGeometryList.h in Headers */,
+				A995F50D163BF49E0053E5D2 /* OTSIntersectionMatrix.h in Headers */,
+				A995F50E163BF49E0053E5D2 /* OTSLinearRing.h in Headers */,
+				A995F50F163BF49E0053E5D2 /* OTSLineSegment.h in Headers */,
+				A995F510163BF49E0053E5D2 /* OTSLineString.h in Headers */,
+				A995F511163BF49E0053E5D2 /* OTSLocation.h in Headers */,
+				A995F512163BF49E0053E5D2 /* OTSMultiLineString.h in Headers */,
+				A995F513163BF49E0053E5D2 /* OTSMultiPoint.h in Headers */,
+				A995F514163BF49E0053E5D2 /* OTSMultiPolygon.h in Headers */,
+				A995F515163BF49E0053E5D2 /* OTSPoint.h in Headers */,
+				A995F516163BF49E0053E5D2 /* OTSPolygon.h in Headers */,
+				A995F517163BF49E0053E5D2 /* OTSPrecisionModel.h in Headers */,
+				A995F518163BF49E0053E5D2 /* OTSGeometryTransformer.h in Headers */,
+				A995F519163BF49E0053E5D2 /* OTSLinearComponentExtractor.h in Headers */,
+				A995F51A163BF49E0053E5D2 /* OTSPointExtractor.h in Headers */,
+				A995F51B163BF49E0053E5D2 /* OTSPolygonExtractor.h in Headers */,
+				A995F51C163BF49E0053E5D2 /* OTSShortCircuitedGeometryVisitor.h in Headers */,
+				A995F51D163BF49E0053E5D2 /* OTSEdgeSetIntersector.h in Headers */,
+				A995F51E163BF49E0053E5D2 /* OTSMonotoneChain.h in Headers */,
+				A995F51F163BF49E0053E5D2 /* OTSMonotoneChainEdge.h in Headers */,
+				A995F520163BF49E0053E5D2 /* OTSMonotoneChainIndexer.h in Headers */,
+				A995F521163BF49E0053E5D2 /* OTSSegmentIntersector.h in Headers */,
+				A995F522163BF49E0053E5D2 /* OTSSimpleMCSweepLineIntersector.h in Headers */,
+				A995F523163BF49E0053E5D2 /* OTSSweepLineEvent.h in Headers */,
+				A995F524163BF49E0053E5D2 /* OTSSweepLineEventOBJ.h in Headers */,
+				A995F525163BF49E0053E5D2 /* OTSDepth.h in Headers */,
+				A995F526163BF49E0053E5D2 /* OTSDirectedEdge.h in Headers */,
+				A995F527163BF49E0053E5D2 /* OTSDirectedEdgeStar.h in Headers */,
+				A995F528163BF49E0053E5D2 /* OTSEdge.h in Headers */,
+				A995F529163BF49E0053E5D2 /* OTSEdgeEnd.h in Headers */,
+				A995F52A163BF49E0053E5D2 /* OTSEdgeEndStar.h in Headers */,
+				A995F52B163BF49E0053E5D2 /* OTSEdgeIntersection.h in Headers */,
+				A995F52C163BF49E0053E5D2 /* OTSEdgeIntersectionList.h in Headers */,
+				A995F52D163BF49E0053E5D2 /* OTSEdgeList.h in Headers */,
+				A995F52E163BF49E0053E5D2 /* OTSEdgeNodingValidator.h in Headers */,
+				A995F52F163BF49E0053E5D2 /* OTSEdgeRing.h in Headers */,
+				A995F530163BF49E0053E5D2 /* OTSGeometryGraph.h in Headers */,
+				A995F531163BF49E0053E5D2 /* OTSGraphComponent.h in Headers */,
+				A995F532163BF49E0053E5D2 /* OTSLabel.h in Headers */,
+				A995F533163BF49E0053E5D2 /* OTSNode.h in Headers */,
+				A995F534163BF49E0053E5D2 /* OTSNodeFactory.h in Headers */,
+				A995F535163BF49E0053E5D2 /* OTSNodeMap.h in Headers */,
+				A995F536163BF49E0053E5D2 /* OTSPlanarGraph.h in Headers */,
+				A995F537163BF49E0053E5D2 /* OTSPosition.h in Headers */,
+				A995F538163BF49E0053E5D2 /* OTSQuadrant.h in Headers */,
+				A995F539163BF49E0053E5D2 /* OTSTopologyLocation.h in Headers */,
+				A995F53A163BF49E0053E5D2 /* OTSItemVisitor.h in Headers */,
+				A995F53B163BF49E0053E5D2 /* OTSSpatialIndex.h in Headers */,
+				A995F53C163BF49E0053E5D2 /* OTSAbstractNode.h in Headers */,
+				A995F53D163BF49E0053E5D2 /* OTSAbstractSTRtree.h in Headers */,
+				A995F53E163BF49E0053E5D2 /* OTSBoundable.h in Headers */,
+				A995F53F163BF49E0053E5D2 /* OTSItemBoundable.h in Headers */,
+				A995F540163BF49E0053E5D2 /* OTSSTRtree.h in Headers */,
+				A995F541163BF49E0053E5D2 /* OTSOrientedCoordinateArray.h in Headers */,
+				A995F542163BF49E0053E5D2 /* OTSConnectedElementLocationFilter.h in Headers */,
+				A995F543163BF49E0053E5D2 /* OTSConnectedElementPointFilter.h in Headers */,
+				A995F544163BF49E0053E5D2 /* OTSDistanceOp.h in Headers */,
+				A995F545163BF49E0053E5D2 /* OTSGeometryLocation.h in Headers */,
+				A995F546163BF49E0053E5D2 /* OTSGeometryGraphOperation.h in Headers */,
+				A995F547163BF49E0053E5D2 /* OTSElevationMatrix.h in Headers */,
+				A995F548163BF49E0053E5D2 /* OTSElevationMatrixCell.h in Headers */,
+				A995F549163BF49E0053E5D2 /* OTSLineBuilder.h in Headers */,
+				A995F54A163BF49E0053E5D2 /* OTSMaximalEdgeRing.h in Headers */,
+				A995F54B163BF49E0053E5D2 /* OTSMinimalEdgeRing.h in Headers */,
+				A995F54C163BF49E0053E5D2 /* OTSOverlayNodeFactory.h in Headers */,
+				A995F54D163BF49E0053E5D2 /* OTSOverlayOp.h in Headers */,
+				A995F54E163BF49E0053E5D2 /* OTSPointBuilder.h in Headers */,
+				A995F54F163BF49E0053E5D2 /* OTSPolygonBuilder.h in Headers */,
+				A995F550163BF49E0053E5D2 /* OTSGeometrySnapper.h in Headers */,
+				A995F551163BF49E0053E5D2 /* OTSLineStringSnapper.h in Headers */,
+				A995F552163BF49E0053E5D2 /* OTSSnapIfNeededOverlayOp.h in Headers */,
+				A995F553163BF49E0053E5D2 /* OTSSnapOverlayOp.h in Headers */,
+				A995F554163BF49E0053E5D2 /* OTSOverlayResultValidator.h in Headers */,
+				A995F555163BF49E0053E5D2 /* OTSRectangleContains.h in Headers */,
+				A995F556163BF49E0053E5D2 /* OTSRectangleIntersects.h in Headers */,
+				A995F557163BF49E0053E5D2 /* OTSSegmentIntersectionTester.h in Headers */,
+				A995F558163BF49E0053E5D2 /* OTSEdgeEndBuilder.h in Headers */,
+				A995F559163BF49E0053E5D2 /* OTSEdgeEndBundle.h in Headers */,
+				A995F55A163BF49E0053E5D2 /* OTSEdgeEndBundleStar.h in Headers */,
+				A995F55B163BF49E0053E5D2 /* OTSRelateComputer.h in Headers */,
+				A995F55C163BF49E0053E5D2 /* OTSRelateNode.h in Headers */,
+				A995F55D163BF49E0053E5D2 /* OTSRelateNodeFactory.h in Headers */,
+				A995F55E163BF49E0053E5D2 /* OTSRelateNodeGraph.h in Headers */,
+				A995F55F163BF49E0053E5D2 /* OTSRelateOp.h in Headers */,
+				A995F560163BF49E0053E5D2 /* OTSCommonBits.h in Headers */,
+				A995F561163BF49E0053E5D2 /* OTSCommonBitsRemover.h in Headers */,
+				A995F562163BF49E0053E5D2 /* OTSSimpleGeometryPrecisionReducer.h in Headers */,
+				A995F563163BF49E0053E5D2 /* OTSUniqueCoordinateArrayFilter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A995F35A163BE7F50053E5D2 /* OTS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A995F380163BE7F60053E5D2 /* Build configuration list for PBXNativeTarget "OTS" */;
+			buildPhases = (
+				A995F357163BE7F50053E5D2 /* Sources */,
+				A995F358163BE7F50053E5D2 /* Frameworks */,
+				A995F359163BE7F50053E5D2 /* CopyFiles */,
+				A995F4F4163BF40F0053E5D2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTS;
+			productName = OTS;
+			productReference = A995F35B163BE7F50053E5D2 /* libOTS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A995F36B163BE7F50053E5D2 /* OTSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A995F383163BE7F60053E5D2 /* Build configuration list for PBXNativeTarget "OTSTests" */;
+			buildPhases = (
+				A995F367163BE7F50053E5D2 /* Sources */,
+				A995F368163BE7F50053E5D2 /* Frameworks */,
+				A995F369163BE7F50053E5D2 /* Resources */,
+				A995F36A163BE7F50053E5D2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A995F373163BE7F50053E5D2 /* PBXTargetDependency */,
+			);
+			name = OTSTests;
+			productName = OTSTests;
+			productReference = A995F36C163BE7F50053E5D2 /* OTSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A995F352163BE7F50053E5D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Purbo;
+			};
+			buildConfigurationList = A995F355163BE7F50053E5D2 /* Build configuration list for PBXProject "OTS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A995F350163BE7F50053E5D2;
+			productRefGroup = A995F35C163BE7F50053E5D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A995F35A163BE7F50053E5D2 /* OTS */,
+				A995F36B163BE7F50053E5D2 /* OTSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A995F369163BE7F50053E5D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A995F37A163BE7F50053E5D2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A995F36A163BE7F50053E5D2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A995F357163BE7F50053E5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A995F486163BEA9B0053E5D2 /* OTSSimplePointInAreaLocator.m in Sources */,
+				A995F487163BEA9B0053E5D2 /* OTSBoundaryNodeRule.m in Sources */,
+				A995F488163BEA9B0053E5D2 /* OTSCentralEndpointIntersector.m in Sources */,
+				A995F489163BEA9B0053E5D2 /* OTSCGAlgorithms.m in Sources */,
+				A995F48A163BEA9B0053E5D2 /* OTSHCoordinate.m in Sources */,
+				A995F48B163BEA9B0053E5D2 /* OTSLineIntersector.m in Sources */,
+				A995F48C163BEA9B0053E5D2 /* OTSNotRepresentableException.m in Sources */,
+				A995F48D163BEA9B0053E5D2 /* OTSPointLocator.m in Sources */,
+				A995F48E163BEA9B0053E5D2 /* OTSPointOnGeometryLocator.m in Sources */,
+				A995F48F163BEA9B0053E5D2 /* OTSRayCrossingCounter.m in Sources */,
+				A995F490163BEA9B0053E5D2 /* OTSRobustDeterminant.m in Sources */,
+				A995F491163BEA9B0053E5D2 /* OTSCoordinate.m in Sources */,
+				A995F492163BEA9B0053E5D2 /* OTSCoordinateFilter.m in Sources */,
+				A995F493163BEA9B0053E5D2 /* OTSCoordinateSequence.m in Sources */,
+				A995F494163BEA9B0053E5D2 /* OTSCoordinateSequenceFactory.m in Sources */,
+				A995F495163BEA9B0053E5D2 /* OTSDefaultGeometryFactory.m in Sources */,
+				A995F496163BEA9B0053E5D2 /* OTSDimension.m in Sources */,
+				A995F497163BEA9B0053E5D2 /* OTSEnvelope.m in Sources */,
+				A995F498163BEA9B0053E5D2 /* OTSGeometry.m in Sources */,
+				A995F499163BEA9B0053E5D2 /* OTSGeometryCollection.m in Sources */,
+				A995F49A163BEA9B0053E5D2 /* OTSGeometryComponentFilter.m in Sources */,
+				A995F49B163BEA9B0053E5D2 /* OTSGeometryFactory.m in Sources */,
+				A995F49C163BEA9B0053E5D2 /* OTSGeometryList.m in Sources */,
+				A995F49D163BEA9B0053E5D2 /* OTSIntersectionMatrix.m in Sources */,
+				A995F49E163BEA9B0053E5D2 /* OTSLinearRing.m in Sources */,
+				A995F49F163BEA9B0053E5D2 /* OTSLineSegment.m in Sources */,
+				A995F4A0163BEA9B0053E5D2 /* OTSLineString.m in Sources */,
+				A995F4A1163BEA9B0053E5D2 /* OTSLocation.m in Sources */,
+				A995F4A2163BEA9B0053E5D2 /* OTSMultiLineString.m in Sources */,
+				A995F4A3163BEA9B0053E5D2 /* OTSMultiPoint.m in Sources */,
+				A995F4A4163BEA9B0053E5D2 /* OTSMultiPolygon.m in Sources */,
+				A995F4A5163BEA9B0053E5D2 /* OTSPoint.m in Sources */,
+				A995F4A6163BEA9B0053E5D2 /* OTSPolygon.m in Sources */,
+				A995F4A7163BEA9B0053E5D2 /* OTSPrecisionModel.m in Sources */,
+				A995F4A8163BEA9B0053E5D2 /* OTSGeometryTransformer.m in Sources */,
+				A995F4A9163BEA9B0053E5D2 /* OTSLinearComponentExtractor.m in Sources */,
+				A995F4AA163BEA9B0053E5D2 /* OTSPointExtractor.m in Sources */,
+				A995F4AB163BEA9B0053E5D2 /* OTSPolygonExtractor.m in Sources */,
+				A995F4AC163BEA9B0053E5D2 /* OTSShortCircuitedGeometryVisitor.m in Sources */,
+				A995F4AD163BEA9B0053E5D2 /* OTSEdgeSetIntersector.m in Sources */,
+				A995F4AE163BEA9B0053E5D2 /* OTSMonotoneChain.m in Sources */,
+				A995F4AF163BEA9B0053E5D2 /* OTSMonotoneChainEdge.m in Sources */,
+				A995F4B0163BEA9B0053E5D2 /* OTSMonotoneChainIndexer.m in Sources */,
+				A995F4B1163BEA9B0053E5D2 /* OTSSegmentIntersector.m in Sources */,
+				A995F4B2163BEA9B0053E5D2 /* OTSSimpleMCSweepLineIntersector.m in Sources */,
+				A995F4B3163BEA9B0053E5D2 /* OTSSweepLineEvent.m in Sources */,
+				A995F4B4163BEA9B0053E5D2 /* OTSSweepLineEventOBJ.m in Sources */,
+				A995F4B5163BEA9B0053E5D2 /* OTSDepth.m in Sources */,
+				A995F4B6163BEA9B0053E5D2 /* OTSDirectedEdge.m in Sources */,
+				A995F4B7163BEA9B0053E5D2 /* OTSDirectedEdgeStar.m in Sources */,
+				A995F4B8163BEA9B0053E5D2 /* OTSEdge.m in Sources */,
+				A995F4B9163BEA9B0053E5D2 /* OTSEdgeEnd.m in Sources */,
+				A995F4BA163BEA9B0053E5D2 /* OTSEdgeEndStar.m in Sources */,
+				A995F4BB163BEA9B0053E5D2 /* OTSEdgeIntersection.m in Sources */,
+				A995F4BC163BEA9B0053E5D2 /* OTSEdgeIntersectionList.m in Sources */,
+				A995F4BD163BEA9B0053E5D2 /* OTSEdgeList.m in Sources */,
+				A995F4BE163BEA9B0053E5D2 /* OTSEdgeNodingValidator.m in Sources */,
+				A995F4BF163BEA9B0053E5D2 /* OTSEdgeRing.m in Sources */,
+				A995F4C0163BEA9B0053E5D2 /* OTSGeometryGraph.m in Sources */,
+				A995F4C1163BEA9B0053E5D2 /* OTSGraphComponent.m in Sources */,
+				A995F4C2163BEA9B0053E5D2 /* OTSLabel.m in Sources */,
+				A995F4C3163BEA9B0053E5D2 /* OTSNode.m in Sources */,
+				A995F4C4163BEA9B0053E5D2 /* OTSNodeFactory.m in Sources */,
+				A995F4C5163BEA9B0053E5D2 /* OTSNodeMap.m in Sources */,
+				A995F4C6163BEA9B0053E5D2 /* OTSPlanarGraph.m in Sources */,
+				A995F4C7163BEA9B0053E5D2 /* OTSPosition.m in Sources */,
+				A995F4C8163BEA9B0053E5D2 /* OTSQuadrant.m in Sources */,
+				A995F4C9163BEA9B0053E5D2 /* OTSTopologyLocation.m in Sources */,
+				A995F4CA163BEA9B0053E5D2 /* OTSAbstractNode.m in Sources */,
+				A995F4CB163BEA9B0053E5D2 /* OTSAbstractSTRtree.m in Sources */,
+				A995F4CC163BEA9B0053E5D2 /* OTSItemBoundable.m in Sources */,
+				A995F4CD163BEA9B0053E5D2 /* OTSSTRtree.m in Sources */,
+				A995F4CE163BEA9B0053E5D2 /* OTSOrientedCoordinateArray.m in Sources */,
+				A995F4CF163BEA9B0053E5D2 /* OTSConnectedElementLocationFilter.m in Sources */,
+				A995F4D0163BEA9B0053E5D2 /* OTSConnectedElementPointFilter.m in Sources */,
+				A995F4D1163BEA9B0053E5D2 /* OTSDistanceOp.m in Sources */,
+				A995F4D2163BEA9B0053E5D2 /* OTSGeometryLocation.m in Sources */,
+				A995F4D3163BEA9B0053E5D2 /* OTSGeometryGraphOperation.m in Sources */,
+				A995F4D4163BEA9B0053E5D2 /* OTSElevationMatrix.m in Sources */,
+				A995F4D5163BEA9B0053E5D2 /* OTSElevationMatrixCell.m in Sources */,
+				A995F4D6163BEA9B0053E5D2 /* OTSLineBuilder.m in Sources */,
+				A995F4D7163BEA9B0053E5D2 /* OTSMaximalEdgeRing.m in Sources */,
+				A995F4D8163BEA9B0053E5D2 /* OTSMinimalEdgeRing.m in Sources */,
+				A995F4D9163BEA9B0053E5D2 /* OTSOverlayNodeFactory.m in Sources */,
+				A995F4DA163BEA9B0053E5D2 /* OTSOverlayOp.m in Sources */,
+				A995F4DB163BEA9B0053E5D2 /* OTSPointBuilder.m in Sources */,
+				A995F4DC163BEA9B0053E5D2 /* OTSPolygonBuilder.m in Sources */,
+				A995F4DD163BEA9B0053E5D2 /* OTSGeometrySnapper.m in Sources */,
+				A995F4DE163BEA9B0053E5D2 /* OTSLineStringSnapper.m in Sources */,
+				A995F4DF163BEA9B0053E5D2 /* OTSSnapIfNeededOverlayOp.m in Sources */,
+				A995F4E0163BEA9B0053E5D2 /* OTSSnapOverlayOp.m in Sources */,
+				A995F4E1163BEA9B0053E5D2 /* OTSOverlayResultValidator.m in Sources */,
+				A995F4E2163BEA9B0053E5D2 /* OTSRectangleContains.m in Sources */,
+				A995F4E3163BEA9B0053E5D2 /* OTSRectangleIntersects.m in Sources */,
+				A995F4E4163BEA9B0053E5D2 /* OTSSegmentIntersectionTester.m in Sources */,
+				A995F4E5163BEA9B0053E5D2 /* OTSEdgeEndBuilder.m in Sources */,
+				A995F4E6163BEA9B0053E5D2 /* OTSEdgeEndBundle.m in Sources */,
+				A995F4E7163BEA9B0053E5D2 /* OTSEdgeEndBundleStar.m in Sources */,
+				A995F4E8163BEA9B0053E5D2 /* OTSRelateComputer.m in Sources */,
+				A995F4E9163BEA9B0053E5D2 /* OTSRelateNode.m in Sources */,
+				A995F4EA163BEA9B0053E5D2 /* OTSRelateNodeFactory.m in Sources */,
+				A995F4EB163BEA9B0053E5D2 /* OTSRelateNodeGraph.m in Sources */,
+				A995F4EC163BEA9B0053E5D2 /* OTSRelateOp.m in Sources */,
+				A995F4ED163BEA9B0053E5D2 /* OTSCommonBits.m in Sources */,
+				A995F4EE163BEA9B0053E5D2 /* OTSCommonBitsRemover.m in Sources */,
+				A995F4EF163BEA9B0053E5D2 /* OTSSimpleGeometryPrecisionReducer.m in Sources */,
+				A995F4F0163BEA9B0053E5D2 /* OTSUniqueCoordinateArrayFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A995F367163BE7F50053E5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A995F572163BF8910053E5D2 /* IntersectionTest.m in Sources */,
+				A995F573163BF8910053E5D2 /* LineSegmentTest.m in Sources */,
+				A995F574163BF8910053E5D2 /* RelateTest.m in Sources */,
+				A995F575163BF8910053E5D2 /* STRtreeTest.m in Sources */,
+				A995F576163BF8910053E5D2 /* DistanceOpTest.m in Sources */,
+				A995F577163BF8910053E5D2 /* SnapOverlayOpTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A995F373163BE7F50053E5D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A995F35A163BE7F50053E5D2 /* OTS */;
+			targetProxy = A995F372163BE7F50053E5D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A995F378163BE7F50053E5D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A995F379163BE7F50053E5D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A995F37E163BE7F60053E5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A995F37F163BE7F60053E5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A995F381163BE7F60053E5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OTS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OTS/OTS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A995F382163BE7F60053E5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OTS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OTS/OTS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A995F384163BE7F60053E5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OTS/OTS-Prefix.pch";
+				INFOPLIST_FILE = "OTSTests/OTSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A995F385163BE7F60053E5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OTS/OTS-Prefix.pch";
+				INFOPLIST_FILE = "OTSTests/OTSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A995F355163BE7F50053E5D2 /* Build configuration list for PBXProject "OTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A995F37E163BE7F60053E5D2 /* Debug */,
+				A995F37F163BE7F60053E5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A995F380163BE7F60053E5D2 /* Build configuration list for PBXNativeTarget "OTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A995F381163BE7F60053E5D2 /* Debug */,
+				A995F382163BE7F60053E5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A995F383163BE7F60053E5D2 /* Build configuration list for PBXNativeTarget "OTSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A995F384163BE7F60053E5D2 /* Debug */,
+				A995F385163BE7F60053E5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A995F352163BE7F50053E5D2 /* Project object */;
+}
